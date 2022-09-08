@@ -1,0 +1,200 @@
+
+.devfolio-main-div {
+    min-height: 100vh;
+  }
+
+  #developer-div{
+    background: rgb(81, 81, 81);
+  }
+
+  .dev-templet-row{
+    margin-top: 5%;
+  }
+  
+.temp-row{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 0;
+}
+  
+  .temp-row .templet img {
+      width: 350px;
+      height: 250px;
+      border-radius: 8px;
+      margin-top: 5%;
+  }
+
+  .templet{
+    position: relative;
+  }
+
+  .templet #bookmark{
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .templet:hover #bookmark{
+    display: inherit;
+  }
+
+  .overlay{
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    bottom: 0;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(46, 46, 46, 0.5);
+    opacity: 0.7;
+    border-radius: 5px;
+  }
+
+  @keyframes details {
+    from{
+      haight:50px;
+      opacity: 0.4;
+    }
+    to{
+      height:93.5%;
+      opacity: 1;
+    }
+  }
+
+  .overlay:hover{
+    animation: 1s details both;
+    background-color: rgb(35, 35, 35);
+    border-radius: 8px;
+  }
+
+  .overlay .profile img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .overlay .profile{
+    margin: auto;
+  }
+
+  
+  .overlay #description{
+    color: black;
+    font-weight: 600;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    background-color: antiquewhite;
+    padding: 0 1rem;
+  }
+
+  #expand{
+    width: fit-content;
+    cursor:pointer;
+    z-index: 2;
+  }
+  
+  @keyframes expand {
+    from{
+      min-height:0.1px;
+      opacity: 0;
+    }
+    to{
+      border-radius: 0px;
+      min-height: 100%;
+      opacity: 1;
+      margin-top: -26px;
+    }
+  }
+
+  .overlay #expand:hover #arrow{
+    transform: rotate(90deg);
+    color: antiquewhite;
+  }
+
+  .overlay #expand:hover + .overlay{
+    background-color: antiquewhite;
+  }
+
+  .overlay #expand:hover + #description{
+    animation: 1s expand both;
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width:1200px) {
+    .dev-templet-row{
+      margin-top: 6%;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    .dev-templet-row{
+      margin-top: 8%;
+    }
+  }
+  @media screen and (max-width:768px) {
+    .dev-templet-row{
+      margin-top: 8%;
+      margin-left: 20%;
+    }
+    .temp-row>img {
+      width: 450px;
+      height: 250px;
+    }
+  }
+  @media screen and (max-width:700px) {
+    .dev-templet-row{
+      margin-top: 9%;
+      margin-left: 15%;
+    }
+    .temp-row>img {
+      width: 450px;
+      height: 250px;
+    }
+  }
+  @media screen and (max-width:550px) {
+    .dev-templet-row{ 
+      margin-top: 10%;
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width:500px) {
+    .dev-templet-row{ 
+      margin-top: 14%;
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width:400px) {
+    #developer-div{
+      margin-top: 15%;
+    }
+    .temp-row{
+      margin-right: 15px;
+    }
+
+    .temp-row>img {
+      width: 300px;
+      height: 200px;
+    }
+  }
+  @media screen and (max-width:300px) {
+    #developer-div{
+      margin-top: 20%;
+    }
+  }
+  

@@ -1,0 +1,169 @@
+.sidenav{
+    width: 250px;
+    min-height: 100vh;
+    position:fixed;
+    background-color: black;
+    z-index: 2;
+}
+
+.section-logo{
+    margin-top: 20%;
+    text-align: center;
+    color: white;
+    /* font-size:x-large; */
+}
+
+.sidenav a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.sidenav ul li div{
+    display: none;
+}
+.sidenav ul li:hover{
+    background-color: rgb(81, 81, 81);
+    box-shadow: inset 4px 0px 0px 0px red;
+    border-radius: 5px 0 0 5px ;
+    /* border: 1px 0 1px 0 solid black; */
+}
+.sidenav ul li:hover div{
+    display: flex;
+}
+
+.sidenav ul{
+    list-style: none;
+}
+
+.sidenav ul li{
+    color: white;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    margin-right: 1rem;
+}
+
+
+.corners{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    position: absolute;
+    height:74.5px;
+    top:-20px;
+    right:20px;
+}
+
+
+.whitespan1{
+    background-color: rgb(81, 81, 81);
+    min-width: 20px;
+    min-height: 20px;
+    position: absolute;
+}
+
+.whitespan2{
+    background-color: rgb(81, 81, 81);
+    min-width: 20px;
+    min-height: 20px;
+    position: absolute;
+}
+
+.blackTopSpan{
+    background-color: black;
+    min-width: 20px;
+    min-height: 20px;
+    border-bottom-right-radius: 20px;
+    position:absolute;
+}
+
+.blackBottomSpan{
+    background-color: black;
+    min-width: 20px;
+    min-height: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+}
+
+
+
+@media screen and (max-width:1500px) {
+    .sidenav{
+        width: 220px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .sidenav{
+        width: 200px;
+    }
+    .sidenav ul li a{
+        font-size: 1rem;
+        align-items: flex-start;
+    }
+
+    .corners{
+        height:69.5px;
+    }
+}
+@media screen and (max-width:1024px) {
+    
+    .sidenav{
+        width: 200px
+    }    
+}
+@media screen and (max-width:768px) {
+    .sidenav{
+        width: 200px;
+    }
+}
+@media screen and (max-width:700px) {
+
+    .sidenav{
+        width: 150px;
+    }
+
+    .sidenav ul{
+        margin-left: -25px;
+    }
+    
+    .sidenav ul li a{
+        font-size: 0.9rem;
+        /* flex-direction: column; */
+        text-overflow: ellipsis;
+        align-items: flex-start;
+    }
+
+    .corners{
+        height:69px;
+    }
+}
+
+
+
+
+@media screen and (max-width:650px) {
+    .sidenav{
+        width: 100px;
+    }
+    .sidenav ul li a{
+        font-size: 0;
+    }
+    .section-logo{
+        font-size: small;
+    }
+    .corners{
+        height:70px;
+    }
+}
+@media screen and (max-width:500px) {
+    .sidenav{
+        display: none;
+    }
+}

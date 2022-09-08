@@ -1,0 +1,84 @@
+.login-main-div{
+    background:url(../../Assets/indexrev.png);
+    background-size: cover;
+    min-height: 100vh !important;
+    overflow-y: hidden;
+}
+
+.login_nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.login-form{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.login-div{
+    width: 70%;
+    padding: 3rem;
+    margin: auto;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+}   
+
+.login-div .login-name{
+    text-align: center;
+}
+.login-div label{
+    font-size: large;
+}
+
+.login-form input{
+    border: transparent;
+    border-bottom: 2px solid black;
+    outline-style: none;
+    background: transparent;
+    border-radius: 0;
+}
+
+.login-form input:focus {
+    background-color: transparent;
+}
+
+.forget-pass a,.forget-pass span{
+    text-decoration: none;
+    color: black;
+    font-size:1rem;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.forget-pass a:hover{
+    font-weight: 700;
+}
+
+.login-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 550px) {
+    .login-div{
+        width: 100%;
+    }
+    .login-div label{
+        font-size: 1rem;
+    }
+    .forget-pass a,.forget-pass  span{
+        font-size: small;
+        padding: 0px 5px;
+    }
+    .forget-pass a:hover{
+        font-weight: 500;
+    }
+    
+}
+    
