@@ -32,7 +32,7 @@ const DevFolio = () => {
             'icon':<BookIcon className='icon'/>,
         },
         {
-            'href':"/",
+            'href':"/developers",
             'name':"Developer",
             'icon':<DevicesIcon className='icon'/>,
         },
