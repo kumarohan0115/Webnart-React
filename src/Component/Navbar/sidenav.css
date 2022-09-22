@@ -1,5 +1,5 @@
 .sidenav{
-    width: 250px;
+    width: 200px;
     min-height: 100vh;
     position:fixed;
     background-color: black;
@@ -92,6 +92,11 @@
     position: absolute;
 }
 
+#logo{
+    height: 100px;
+    width: 100px;
+}
+
 
 
 @media screen and (max-width:1500px) {
@@ -160,6 +165,11 @@
     }
     .corners{
         height:70px;
+    }
+
+    #logo{
+        height: 80px;
+        width: 80px;
     }
 }
 @media screen and (max-width:500px) {

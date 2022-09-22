@@ -40,7 +40,7 @@ const Login = () => {
                     <label htmlFor="password">Password:</label><br/>
                     <input type="password" id="pass" class="form-control" name="pass"/><br/>
                 <div class="forget-pass">
-                    <a href="/">Forget password</a> <span> | </span> <a href="allo">SignUp</a>
+                    <a href="/">Forget password</a> <span> | </span> <a href="/">SignUp</a>
                 </div>
                 <div class="login-btn">
                     <button class="btn btn-lg btn-outline-primary" type="submit" name="login">Login</button>

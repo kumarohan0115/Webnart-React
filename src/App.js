@@ -4,12 +4,15 @@ import Signup from './Component/Credencials/Signup'
 import Login from './Component/Credencials/Login'
 import Devfolio from './Component/Development/DevFolio'
 import Developers from './Component/Developers/Developers'
+import ArtGallary from './Component/Art/ArtGallary'
 import Photos from './Component/PhotoGallary/Photos'
 import {
   BrowserRouter,
   Routes,
   Route,
 } from 'react-router-dom';
+import HomeLogin from './Component/Credencials/HomeLogin';
+import Register from './Register';
 
 function App() {
   return (
@@ -27,7 +30,13 @@ function App() {
           </Route>
           <Route exact path="/developers" element={<Developers/>}>
           </Route>
+          <Route exact path="/artgallary" element={<ArtGallary/>}>
+          </Route>
           <Route exact path="/photos" element={<Photos/>}>
+          </Route>
+          <Route exact path="/homeLogin" element={<HomeLogin/>}>
+          </Route>
+          <Route exact path="/register" element={<Register/>}>
           </Route>
         </Routes>
       </BrowserRouter>

@@ -148,6 +148,15 @@ tiles_slideonoff()
                 Signup
               </a>
             </div>
+            <div className="signup-btn">
+              <a href="/homeLogin">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+              </a>
+            </div>
             <div className="main-con">
               <h1>Welcome to </h1>
               <div className="w-div">Webnart</div>
@@ -174,7 +183,7 @@ tiles_slideonoff()
           <div className="top-nav-con" id="top-nav-con">
             <a href="/Devefolio">Development</a>
             <a href="shashaVW.php">Game</a>
-            <a href="/photos">Arts</a>
+            <a href="/ArtGallary">Arts</a>
             <a href="/">Future</a>
             <div className="login">
               <a href="/webnart/htmls/user-login.php">

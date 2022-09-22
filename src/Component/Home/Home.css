@@ -163,7 +163,7 @@ a{
     padding:0 2rem;
     background-color: rgb(255, 255, 255,0.2);
     width: fit-content;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 40px;
     float: right;
 }
@@ -214,7 +214,7 @@ a{
 
 .top-nav{
     background-color: rgb(6, 6, 6);
-    height:60px;
+    height:48px;
 }
 .top-nav-con{
     float:center;
@@ -224,8 +224,8 @@ a{
 .top-nav-con>a{
     padding-left:10px;
     padding-right: 10px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
     color: white;
     border-width: 0%;
     text-decoration: none;
@@ -235,7 +235,7 @@ a{
 }
 
 .top-nav-con>a:hover{
-    border-bottom: 5px solid red;
+    border-bottom: 2px solid red;
 }
 
 

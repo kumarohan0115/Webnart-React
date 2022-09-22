@@ -2,15 +2,13 @@ import React from 'react'
 import './sidenav.css'
 
 
-const SideNav = ({ name }) => {
-
-  
+const SideNav = ({ name, logo}) => {
+  // console.log(logos.img);
 
   return (
     <div className='sidenav'>
       <div className="section-logo">
-        {/* <img src="" alt="" /> */}
-        <h2><b>{`</>`}</b></h2>
+        <img id='logo' src={logo[0].logo} alt="img" />
       </div>
       <ul>
         {name.map((list, i) => (

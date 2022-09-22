@@ -17,12 +17,12 @@ const DevFolio = () => {
 
     const devSideNavElement=[
         {
-            'href':"/",
+            'href':"/Devefolio",
             'name':"Dev-Home",
             'icon':<HomeIcon className='icon'/>,
         },
         {
-            'href':"/",
+            'href':"/register",
             'name':"Event",
             'icon':<EventNoteIcon className='icon'/>,
         },
@@ -41,12 +41,18 @@ const DevFolio = () => {
             'name':"Saved",
             'icon':<BookmarksIcon className='icon'/>,
         }
+            
     ]
+
+    const logo=[{
+        'logo':'https://t4.ftcdn.net/jpg/04/64/64/09/360_F_464640910_Bid7MoSLjzV6wv6Ukhks0sx9EhDgljIw.jpg'
+    }]
+    
 
     return (
         <div id='developer-div'>
             <Navbar button_name={'join Us'}/>
-            <SideNav name={devSideNavElement}/>
+            <SideNav name={devSideNavElement} logo={logo} />
             {/* Content---------------------------------------------------------> */}
 
             <div className="devfolio-main-div offset-lg-2 col-lg-10 offset-md-2 col-md-10 col-sm-12">

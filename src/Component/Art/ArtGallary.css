@@ -1,0 +1,269 @@
+
+
+  .left-it {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: -20px 0 0;
+    display: inline-block;
+    /* float:right; */
+    margin-right: 50px;
+    overflow: hidden;
+  }
+  
+  .left-it > i,
+  .left-it > .f-c > button > i {
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .f-c {
+    display: inline-block;
+  }
+  
+  /* input[type="text"],
+  select {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+  } */
+
+
+
+
+
+
+
+
+
+
+  .logo{
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+
+
+  .side-nav2 {
+    width: 230px;
+    background-color: #080f16;
+    height: 100%;
+    position: fixed;
+    top: 8%;
+  }
+  
+  .bar2 {
+    padding-top: 50px;
+    margin-left: 12%;
+    color: white;
+  }
+  
+  .nav-con2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    /* margin-top: 50px; */
+  }
+  
+  .nav-con2 > a {
+    font-size: 1rem;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+
+
+
+  
+  .nav-con2 > a:hover {
+    color: white;
+    background-color: rgba(241, 238, 238, 0.3);
+  }
+  
+  .nav-con2 > a > img {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .nav-con2 > a > #home,#asprite{
+    width: 30px;
+  }
+
+  .bor {
+    border: 2px solid white;
+  }
+  
+  .bor-r {
+    border: 2px solid red;
+  }
+
+
+
+
+
+
+
+
+
+
+.artgallary-home-main_div{
+    margin-left: 230px;
+    z-index: -1;
+}
+
+
+.tranparent{
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+
+.head{
+    /* padding-left: 230px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+.Art_section > h1{
+
+    color: black;
+    font-weight: 700;
+    width: fit-content;
+    padding: 0px 250px;
+    border-radius: 130px;
+    border: 3px solid red;
+    margin-bottom: 30px;
+    font-size: 60px;
+    white-space: nowrap;
+}
+
+
+@media only screen and (max-width: 1075px) {
+  .Art_section > h1{
+    padding: 0px 150px 0px 150px;
+    font-size: 40px;
+    white-space: nowrap;
+  }
+  /* .nav-con2 > a {
+    font-size: 10px;
+  } */
+}
+
+@media only screen and (max-width: 768px) {
+  .Art_section > h1{
+    padding: 0px 100px 0px 100px;
+    white-space: nowrap;
+    font-size: 40px;
+  }
+  .nav-con2 > a {
+    font-size: 0px;
+    margin-left: 25%;
+  }
+  .side-nav2 {
+    width: 150px;
+    background-color: #080f16;
+    height: 100%;
+    position: fixed;
+  }
+  .logo{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .Art_section > h1{
+    padding: 0px 100px 0px 100px;
+    
+    white-space: nowrap;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 654px) {
+  .Art_section > h1{
+    padding: 0px 80px 0px 80px;
+    
+    white-space: nowrap;
+    font-size: 20px;
+  }
+}
+
+
+.description{
+    color: black;
+    font-weight: 500;
+}
+
+.area{
+    margin-left: 100px;
+    /* margin-bottom: 15px; */
+}
+
+
+
+.col-lg-3{
+    display: block;
+    margin: -14px;
+}
+
+
+.images > img{
+    /* margin-bottom: 8px; */
+    width: 100%;
+    height: auto;
+}
+
+.bor-b{
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+/* .footer{
+    padding-left: 230px;
+    background-color: #080f16;
+    height: 80px;
+    width: 100%;
+    bottom: 0%;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    position: fixed;
+}
+
+.footer .col-4 h4{
+    color: white;
+    text-align: left !important;
+}
+.footer .col-4 p{
+    font-size: 1rem;
+}
+
+.social > a> img{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: initial;
+    width: 40px;
+}
+
+.foot{
+    z-index: 1;
+    left: 0%;
+    right: 0% ;
+    bottom: 0% !important;
+    margin-top:15px !important;
+} */

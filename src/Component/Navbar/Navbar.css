@@ -52,6 +52,7 @@
     background-color: black;
     position: fixed;
     top: 0;
+    height: 48px;
     width: 100%;
 }
 
@@ -96,12 +97,12 @@
 
 .signup__navbar-sign button,
 .signup__navbar-menu_container button {
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.5rem;
     color: #fff;
     background: #FF4820;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 25px;
     border: none;
     outline: none;

@@ -1,6 +1,6 @@
 import React from 'react'
 import './developers.css'
-import $ from 'jquery';
+// import $ from 'jquery';
 import avatar from '../../Assets/avtart.png'
 import SideNav from '../Navbar/SideNav';
 import Navbar from '../Navbar/Navbar';
@@ -10,7 +10,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import BookIcon from '@mui/icons-material/Book';
 import DevicesIcon from '@mui/icons-material/Devices';
-import BookmarksIcon from '@mui/icons-material/Bookmarks';
+// import BookmarksIcon from '@mui/icons-material/Bookmarks';
 
 const Developers = () => {
 
@@ -38,14 +38,18 @@ const Developers = () => {
     
     ]
 
+    const logo=[{
+        'logo':'https://t4.ftcdn.net/jpg/04/64/64/09/360_F_464640910_Bid7MoSLjzV6wv6Ukhks0sx9EhDgljIw.jpg'
+    }]
+
+
   return (
     <div className="developers-main-div">
         <Navbar button_name={'Join As Developer'}/>
         <div className="side-area1"></div>
 
-        <SideNav name={developersSideNav}/>
+        <SideNav name={developersSideNav} logo={logo}/>
         
-
         <div className="side-area2">
             <a href="/"><span className="joinus">Developer's Login</span></a>
         </div>
@@ -86,43 +90,7 @@ const Developers = () => {
                     <img src={avatar} alt="avtar"/>
                     <h4>Developer Name</h4>
                     <h5>Designation</h5>
-
-
-
-                    {/* <?php
-                    //from here
-
-                    include 'connective.php';
-
-
-                    $connect = $connection;
-
-                    $query = "SELECT * FROM personal_table ";
-
-
-
-                    $sql = mysqli_query($connect, $query) or die(" no ");
-
-                    if (mysqli_num_rows($sql) > 0) {
-                        while ($row = mysqli_fetch_assoc($sql)) {
-
-
-
-
-                    ?>
-                            <div className="port"><img src="showimage.php?name=<?php echo ($row['NAME']) ?>" alt="">
-                                <h4><?php echo ($row['NAME']); ?></h4>
-                                <p><?php echo ($row['DESIGNATION']); ?></p>
-                            </div>
-                    <?php }
-                        //to here
-
-                    } ?> */}
-
-
                 </div>
-               
-
             </div>
         </div>
     </div>
