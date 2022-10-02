@@ -23,16 +23,16 @@ const Home = () => {
         setWidth(window.innerWidth);
     });
 
-   useEffect(()=>{
-      if(width<768){
-        document.getElementById('l-t').className='tiles-l-h text-center';
-        document.getElementById('r-t').className='tiles-r-h text-center';
-      }
-      else{
-        document.getElementById('l-t').className='tiles-l text-center';
-        document.getElementById('r-t').className='tiles-r text-center';
-      }
-   },[])
+  //  useEffect(()=>{
+  //     if(width<768){
+  //       document.getElementById('l-t').className='tiles-l-h text-center';
+  //       document.getElementById('r-t').className='tiles-r-h text-center';
+  //     }
+  //     else{
+  //       document.getElementById('l-t').className='tiles-l text-center';
+  //       document.getElementById('r-t').className='tiles-r text-center';
+  //     }
+  //  },[])
 
    var n=1;
 showSlides()
@@ -141,6 +141,19 @@ tiles_slideonoff()
           <div className="right-div ">
             <div className="signup-btn">
               <a href="/signup">
+              {/* <a href="/tnssignup"> */}
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Signup
+              </a>
+            </div>
+
+            {/* TNS */}
+            <div className="signup-btn">
+              <a href="/Tnssignup">
+              {/* <a href="/tnssignup"> */}
                 <span></span>
                 <span></span>
                 <span></span>
@@ -150,6 +163,19 @@ tiles_slideonoff()
             </div>
             <div className="signup-btn">
               <a href="/homeLogin">
+              {/* <a href="/tnslogin"> */}
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+              </a>
+            </div>
+
+            {/* TNS */}
+            <div className="signup-btn">
+              <a href="/tnslogin">
+              {/* <a href="/tnslogin"> */}
                 <span></span>
                 <span></span>
                 <span></span>

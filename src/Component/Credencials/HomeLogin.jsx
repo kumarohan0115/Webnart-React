@@ -82,6 +82,47 @@ const HomeLogin = () => {
         document.getElementsByClassName('homelogin-main')[0].style.visibility="visible";
     }
 
+    // constructor(submit){
+    //     super();
+    //     this.state = {
+    //         username:'',
+    //         password:'',
+    //         confirm_pwd:'',
+    //     };
+    // }
+
+    // submit=(e)=>{
+
+    //     let {username,password,confirm_pwd}=this.state;
+    //     fetch('localhost:3000/add_book', {
+    //          method: 'post',
+    //          headers: {'Content-Type': 'application/json'},
+    //          body: JSON.stringify({
+    //             username:username,
+    //             password:password,
+    //             confirm_pwd:confirm_pwd,
+    //          })
+    //        }).then(response=>response.json()).then(data=>{
+    //             window.alert(data)
+    //             //Do anything else like Toast etc.
+    //    })
+       
+    //    }
+
+    //    updateInfo = (event) =>{
+    //     let fieldName = event.target.name;
+    //     let fieldValue = event.target.value;
+    //     if(fieldName === 'username') {
+    //         this.setState({username: fieldValue});
+    //     }
+    //     else if(fieldName === 'password'){
+    //         this.setState({password:fieldValue});
+    //     }
+    //     else if(fieldName === 'confirm_pwd'){
+    //         this.setState({confirm_pwd:fieldValue});
+    //     }
+    // };
+
   return (
     <div id='homeLogin'>
         
@@ -96,13 +137,13 @@ const HomeLogin = () => {
             </div>
             <div className="homelogindiv">
                 <div className='login'><h1>Login</h1></div>
-                <form action="" className="form-group homeloginform">
+                <form action="http://localhost:5001/api/v2/login_api" className="form-group homeloginform" method="POST">
                     <label htmlFor="UserName">UserName</label>
                     <input 
-                    type="text" className='form-control loginInput' placeholder='UserName' autoFocus required />
+                    type="text" className='form-control loginInput' name="username" placeholder='UserName' autoFocus required />
                     <label htmlFor="Password">Password</label>
-                    <input type="password" className='form-control loginInput' minLength={6} maxLength={12} placeholder='Password'/>
-                    <button className="btn btn-outline-success" disabled>Login</button>
+                    <input type="password" className='form-control loginInput' name="password" placeholder='Password'/>
+                    <button type="submit" className="btn btn-outline-success">Login</button>
                 </form>
             </div>
         </div>
@@ -129,7 +170,7 @@ const HomeLogin = () => {
                 
                 <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
                 
-                <form action="" className="form-group homeloginform" onSubmit={submitHandle}>
+                <form action="http://localhost:5001/api/v2/postsqlData" className="form-group homeloginform" method="POST">
                     <label htmlFor="UserName">UserName/Email
                         <span className={validName ? "valid": "hide"}><FontAwesomeIcon icon={faCheck}/></span>
                         <span className={validName || !user ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
@@ -184,33 +225,34 @@ const HomeLogin = () => {
                         Allowed special Characters: eg. @,!,&,$,#,% etc.
                     </p>
                     
-                    <label htmlFor="Password">Confirm Password
+                    <label htmlFor="Role">Role
                         <FontAwesomeIcon icon={faCheck} className={validMatch && matchPwd ? "valid" : "hide"} />
                         <FontAwesomeIcon icon={faTimes} className={validMatch || !matchPwd ? "hide" : "invalid"} />
                     </label>
                     <input 
-                        type="password" 
+                        type="text" 
                         className='form-control loginInput' 
-                        placeholder='Password'
+                        placeholder='Role'
                         id="confirm_pwd"
-                        onChange={(e) => setMatchPwd(e.target.value)}
-                        value={matchPwd}
+                        name="role"
+                        // onChange={(e) => setMatchPwd(e.target.value)}
+                        // value={matchPwd}
                         required
-                        aria-invalid={validMatch ? "false" : "true"}
-                        aria-describedby="confirmnote"
+                        // aria-invalid={validMatch ? "false" : "true"}
+                        // aria-describedby="confirmnote"
                         onFocus={() => setMatchFocus(true)}
                         onBlur={() => setMatchFocus(false)}
                     />
-                    <p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
+                    {/* <p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
                         <FontAwesomeIcon icon={faInfoCircle} />
                         Must match the first password input field.
-                    </p>
-                    <button className="btn btn-outline-success" disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
+                    </p> */}
+                    <button type="submit" className="btn btn-outline-success" disabled={!validName || !validPwd ? true : false}>Sign Up</button>
                 </form>
             </div>
         </div>
-        )
-        }
+       )
+    }
     </div>
   )
 }

@@ -13,6 +13,8 @@ import {
 } from 'react-router-dom';
 import HomeLogin from './Component/Credencials/HomeLogin';
 import Register from './Register';
+import Tnssignup from './Component/Game/Tnssignup';
+import Tnslogin from './Component/Game/Tnslogin';
 
 function App() {
   return (
@@ -37,6 +39,10 @@ function App() {
           <Route exact path="/homeLogin" element={<HomeLogin/>}>
           </Route>
           <Route exact path="/register" element={<Register/>}>
+          </Route>
+          <Route exact path="/tnssignup" element={<Tnssignup/>}>
+          </Route>
+          <Route exact path="/tnslogin" element={<Tnslogin/>}>
           </Route>
         </Routes>
       </BrowserRouter>
