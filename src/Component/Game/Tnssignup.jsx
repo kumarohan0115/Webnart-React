@@ -79,7 +79,7 @@ const Tnssignup = () => {
           </div>
           <div className='form-group workshop-form'>
               <label htmlFor="">Name</label>
-              <input className="form-control" type = "text" name = "fullanme" id = "name"  placeholder='Full Name'onChange={handleinput} value={user.fullname}  required/>
+              <input className="form-control" type = "text" name = "fullname" id = "name"  placeholder='Full Name'onChange={handleinput} value={user.fullname}  required/>
               
               <label htmlFor="">Branch</label>
               <input className="form-control" type = "text" name = "branch" id = "branch" placeholder='Branch' onChange={handleinput} value={user.branch}  required/>
