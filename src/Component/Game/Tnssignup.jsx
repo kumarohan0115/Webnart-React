@@ -1,18 +1,29 @@
 import React from 'react'
 import { useState } from 'react'
-
+import axios from '../../axios'
 
 const Tnssignup = () => {
-
-
-
-
 
   const [user, setUser]= useState({
     username:"",
     password:"",
     role:""
   })
+
+  const register=()=>{
+    axios.post('/register', {
+      username:user.username,
+    password:user.password,
+    role:user.role
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+}
+
 
   let name,value;
   const handleinput=(e)=>{
@@ -51,11 +62,11 @@ const Tnssignup = () => {
     <>
         <div className="ma">
 
-        <form action="https://webnart-backend.herokuapp.com/register" method="POST">
+        <form>
             <input type = "text" name = "username" id = "username"  placeholder='username'onChange={handleinput} value={user.username} />
             <input type = "text" name = "password" id = "password" placeholder='password' onChange={handleinput} value={user.password} />
             <input type = "text" name = "role" id = "role" placeholder='role'onChange={handleinput} value={user.role} /> 
-            <button type = "submit" >submit </button>
+            <button onClick={register} >submit </button>
         </form>
         </div>
     </>
