@@ -13,7 +13,7 @@ import {
 } from 'react-router-dom';
 import HomeLogin from './Component/Credencials/HomeLogin';
 import Register from './Register';
-import Tnssignup from './Component/Game/Tnssignup';
+import Workshopregistration from './Component/Game/Workshopregistration';
 import Tnslogin from './Component/Game/Tnslogin';
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
           </Route>
           <Route exact path="/register" element={<Register/>}>
           </Route>
-          <Route exact path="/tnssignup" element={<Tnssignup/>}>
+          <Route exact path="/workshopregitrstion" element={<Workshopregistration/>}>
           </Route>
           <Route exact path="/tnslogin" element={<Tnslogin/>}>
           </Route>

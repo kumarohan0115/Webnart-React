@@ -139,50 +139,41 @@ tiles_slideonoff()
             </div>
           </div>
           <div className="right-div ">
-            <div className="signup-btn">
-              <a href="/signup">
-              {/* <a href="/tnssignup"> */}
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Signup
-              </a>
-            </div>
+            <div className="buttons">
+              <div className="signup-btn">
+                <a href="/signup">
+                {/* <a href="/tnssignup"> */}
+                  Signup
+                </a>
+              </div>
 
-            {/* TNS */}
-            <div className="signup-btn">
-              <a href="/Tnssignup">
-              {/* <a href="/tnssignup"> */}
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Signup
-              </a>
+              {/* TNS */}
+              <div className="signup-btn">
+                <a href="/workshopregitrstion">
+                  WorkShop Reg
+                </a>
+              </div>
             </div>
-            <div className="signup-btn">
+            {/* <div className="signup-btn">
               <a href="/homeLogin">
-              {/* <a href="/tnslogin"> */}
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Login
               </a>
-            </div>
+            </div> */}
 
             {/* TNS */}
-            <div className="signup-btn">
+            {/* <div className="signup-btn">
               <a href="/tnslogin">
-              {/* <a href="/tnslogin"> */}
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Login
               </a>
-            </div>
+            </div> */}
             <div className="main-con">
               <h1>Welcome to </h1>
               <div className="w-div">Webnart</div>

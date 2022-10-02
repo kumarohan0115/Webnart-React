@@ -2,10 +2,11 @@ import React from 'react'
 import './react-form.css'
 import { useState } from 'react'
 import axios from '../../axios'
-import Navbar from '../../Component/Navbar/Navbar'
+import Navbar from '../Navbar/Navbar'
 
-const Tnssignup = () => {
-
+const Workshopregistration = () => {
+  
+  const [success,setSuccess]= useState(false);
   const [user, setUser]= useState({
     fullname:"",
     branch:"",
@@ -13,9 +14,9 @@ const Tnssignup = () => {
     email:"",
     phone:"",
     preknowledge:"",
-    select:""
+    option:""
   })
-
+  
   const register=()=>{
     console.log(user);
     axios.post('/register', {
@@ -25,13 +26,11 @@ const Tnssignup = () => {
       email:user.email,
       phone:user.phone,
       preknowledge:user.preknowledge,
-      select:user.Select
+      option:user.option
   })
   .then(function (response) {
-    if(response==="Successfull!"){
-      window.location.href="/Tnssignup"
-    }
     console.log(response);
+    setSuccess(true);
   })
   .catch(function (error) {
     console.log(error);
@@ -40,42 +39,26 @@ const Tnssignup = () => {
 
 
   let name,value;
-  const handleinput=(e)=>{
+  const handleinput=async(e)=>{
     console.log(e);
     name=e.target.name;
     value=e.target.value;
-
-    setUser({...user,[name]:value});
+    await setUser({...user,[name]:value});
   }
-
-  // const postdata=async(e)=>{
-  //   e.preventDefault()
-  //   const {username, password, role} = user;
-  //   const res = await fetch("/register",{
-  //     headers:{
-  //       "content-type":"application/json"
-  //     },
-  //     body:JSON.stringify({
-  //       username, password, role
-  //     })
-  //   })
-  //   const data = await res.json();
-  //   if(data.status ===422 || !data){
-  //     window.alert("Invalid Registration")
-  //     console.log("Invalid Registration")
-  //   }
-  //   else{
-  //     window.alert(" Registration Sucessfull!")
-  //     console.log("Registration Sucessfull")
-  //   }
-  // }
 
   return (
     <div id='workshop'>
         <Navbar/>
+        {
+        success ?(
+            <section>
+                <h1>Success!</h1>
+            </section>
+        ):
+        ( 
         <div className="form-div col-lg-5 col-md-8 col-sm-12">
           <div className="heading">
-            <h2>React JS Workshop Registration Form</h2>
+            <h2>React JS Workshop Registration</h2>
           </div>
           <div className='form-group workshop-form'>
               <label htmlFor="">Name</label>
@@ -98,16 +81,15 @@ const Tnssignup = () => {
               <span>Insert Data Seprated with comma " , ".</span>
               
               <label htmlFor="">Available for WorkShop</label>
-              <select className="form-control" name="Select" id="" value={user.Select} required>
-                <option value="" selected>Select</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-              <button className="btn btn-sm btn-outline-success" onClick={register} >Submit </button>
+              <input className="form-control" type = "text" name = "option" id = "option" placeholder='Available for offline Workshop' onChange={handleinput} value={user.option} />
+              
+              <button className="btn btn-sm btn-success" onClick={register} >Submit </button>
           </div>
         </div>
+        )
+        }
     </div>
   )
 }
 
-export default Tnssignup
+export default Workshopregistration;
