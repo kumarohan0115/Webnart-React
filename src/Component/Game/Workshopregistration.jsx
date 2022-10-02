@@ -52,7 +52,7 @@ const Workshopregistration = () => {
         {
         success ?(
             <section>
-                <h1>Success!</h1>
+                <h1>Submitted Succefully!</h1>
             </section>
         ):
         ( 
