@@ -11,6 +11,7 @@ const Tnssignup = () => {
   })
 
   const register=()=>{
+    console.log(user);
     axios.post('/register', {
       username:user.username,
     password:user.password,
@@ -18,7 +19,7 @@ const Tnssignup = () => {
   })
   .then(function (response) {
     if(response==="Successfull!"){
-      window.location.href="/tnssignup"
+      window.location.href="/Tnssignup"
     }
     console.log(response);
   })
