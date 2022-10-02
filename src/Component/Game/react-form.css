@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+}
+
+#workshop{
+    color: white;
+    background: url("../../Assets/bg.png");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    /* overflow-y: scroll; */
+    justify-content: center;
+    padding-top: 50px;
+}
+.form-div{
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.heading{
+    /* margin-top: 2rem; */
+    text-align: center;
+    text-decoration: underline;
+}
+
+.workshop-form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+
+
+.workshop-form label{
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+
+button{
+    
+    margin: auto;
+    margin-top: 1rem;
+}
