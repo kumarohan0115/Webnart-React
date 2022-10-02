@@ -17,6 +17,9 @@ const Tnssignup = () => {
     role:user.role
   })
   .then(function (response) {
+    if(response=="successfull"){
+      window.location.href="/tnssignup"
+    }
     console.log(response);
   })
   .catch(function (error) {
