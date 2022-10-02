@@ -17,7 +17,7 @@ const Tnssignup = () => {
     role:user.role
   })
   .then(function (response) {
-    if(response=="successfull"){
+    if(response==="Successfull!"){
       window.location.href="/tnssignup"
     }
     console.log(response);
