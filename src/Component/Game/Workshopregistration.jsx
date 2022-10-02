@@ -46,6 +46,12 @@ const Workshopregistration = () => {
     await setUser({...user,[name]:value});
   }
 
+
+
+  const close=()=>{
+    document.getElementsByClassName('popup')[0].style.display="none"
+  }
+
   return (
     <div id='workshop'>
         <Navbar/>
@@ -65,7 +71,7 @@ const Workshopregistration = () => {
               <input className="form-control" type = "text" name = "fullname" id = "name"  placeholder='Full Name'onChange={handleinput} value={user.fullname}  required/>
               
               <label htmlFor="">Branch</label>
-              <input className="form-control" type = "text" name = "branch" id = "branch" placeholder='Branch' onChange={handleinput} value={user.branch}  required/>
+              <input className="form-control" type = "text" name = "branch" id = "branch" placeholder='Branch' onChange={handleinput} value={user.branch} autoCapitalize required/>
               
               <label htmlFor="">Year</label>
               <input className="form-control" type = "text" name = "year" id = "year" placeholder='Year'onChange={handleinput} value={user.year}  required/> 
@@ -74,7 +80,7 @@ const Workshopregistration = () => {
               <input className="form-control" type = "email" name = "email" id = "email"  placeholder='Email'onChange={handleinput} value={user.email}  required/>
               
               <label htmlFor="">Contact No.</label>
-              <input className="form-control" type = "tel" name = "phone" id = "phone"  placeholder='Contact No.'onChange={handleinput} value={user.phone}  required/>
+              <input className="form-control" type = "tel" name = "phone" id = "phone"  placeholder='10 Digit Contact No.'onChange={handleinput} value={user.phone} minLength={10} maxLength={10} required/>
               
               <label htmlFor="">Pre Aquired Knowledge   (if don't know any thing leave blank!)</label>
               <input className="form-control" type = "text" name = "preknowledge" id = "preknowledge" placeholder='Pre Aquired Knowledge of web-Development...' onChange={handleinput} value={user.preknowledge} />
@@ -88,8 +94,27 @@ const Workshopregistration = () => {
         </div>
         )
         }
+        <div className='popup'>
+          <div className='popupdata'>
+            <h1>Important Notice</h1>
+            <ul>
+              <li>Time</li>
+              <li>Date</li>
+              <li>Venue</li>
+              <li>co-ordinator-1
+                <ul>Contact No.</ul>
+              </li>
+              <li>co-ordinator-2
+                <ul>Contact No.</ul>
+              </li>
+            </ul>
+            <button className='cross btn btn-danger' onClick={close}>Close</button>
+          </div>
+        </div>
     </div>
   )
 }
 
 export default Workshopregistration;
+
+
