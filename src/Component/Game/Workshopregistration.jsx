@@ -1,5 +1,5 @@
 import React from 'react'
-import './react-form.css'
+import './workshop-form.css'
 import { useState } from 'react'
 import axios from '../../axios'
 import Navbar from '../Navbar/Navbar'

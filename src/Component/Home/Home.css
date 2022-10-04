@@ -79,7 +79,7 @@ a{
 .ex{
     writing-mode: vertical-lr;
     color: white;
-    font-size: 50px;
+    font-size: 38px;
 }
 
 
@@ -228,9 +228,10 @@ a{
     height:48px;
 }
 .top-nav-con{
-    float:center;
     text-align: center;
     padding-top: 15px;    
+    display: flex;
+    justify-content: center;
 }
 .top-nav-con>a{
     padding-left:10px;
@@ -245,18 +246,26 @@ a{
     display: none;
 }
 
-.top-nav-con>a:hover{
-    border-bottom: 2px solid red;
+
+.top-nav-con a::after {
+    content: '';
+    display: flex;
+    width: 0;
+    height: 4px;
+    background: rgb(183, 6, 6);
+    transition: width .3s;
+}
+
+.top-nav-con>a:hover::after {
+    width: 100%;
 }
 
 
 
-
-.login{
-    float:right;
-    margin-right: 50px;
-    
+#quote{
+    color: rgb(227, 61, 0);
 }
+
 
 .top-nav-col{
     padding-top:15px;
@@ -296,11 +305,12 @@ a{
     padding: 0 0 0 0;
 }
 .q-div{
-    background-color: #73777B;
+    background-color: #eff5f6;
     border-radius: 20px;
     font-size: 20px;
     padding:50px 60px 50px 60px;
     text-align: center;
+    color: black;
 }
 
 
@@ -424,6 +434,35 @@ color: blue;
 
 
 
+@media screen and (max-height:450px){
+    .ex{
+        writing-mode: vertical-lr;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .s-b{
+    
+        margin: 0.5rem;
+        width:2rem;
+        height:2rem;
+        color: white;
+        padding:4px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255,0.5);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .s-b a{
+        margin: auto;
+        color: black;
+    }
+    .MuiSvgIcon-root{
+        font-size: 1rem;
+    }
+
+}
 @media screen and (max-width:1371px){
     .tech-div{
         width:370px;

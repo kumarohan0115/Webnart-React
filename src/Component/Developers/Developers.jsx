@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './developers.css'
-// import $ from 'jquery';
+import $ from 'jquery';
 import avatar from '../../Assets/avtart.png'
 import SideNav from '../Navbar/SideNav';
 import Navbar from '../Navbar/Navbar';
@@ -10,7 +10,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import BookIcon from '@mui/icons-material/Book';
 import DevicesIcon from '@mui/icons-material/Devices';
-// import BookmarksIcon from '@mui/icons-material/Bookmarks';
+import AlignHorizontalLeftIcon from '@mui/icons-material/AlignHorizontalLeft';
+import { display } from '@mui/system';
 
 const Developers = () => {
 
@@ -42,19 +43,30 @@ const Developers = () => {
         'logo':'https://t4.ftcdn.net/jpg/04/64/64/09/360_F_464640910_Bid7MoSLjzV6wv6Ukhks0sx9EhDgljIw.jpg'
     }]
 
+    
+    
+    const [isActive, setActive] = useState(false);
+    const toggleClass = () => {
+        console.log("clicked")
+        document.getElementsByClassName('sidenav')[0].style.display = "block";
+            setActive(!isActive);
+          };
+        
 
   return (
     <div className="developers-main-div">
         <Navbar button_name={'Join As Developer'}/>
-        <div className="side-area1"></div>
+        <div className="side-area1">
+            <AlignHorizontalLeftIcon id="menu-icon" onClick={toggleClass}/>
+        </div>
 
-        <SideNav name={developersSideNav} logo={logo}/>
+        <SideNav ClassName="{isActive ? 'active': null}, " id="side_nav_developer" name={developersSideNav} logo={logo} />
         
         <div className="side-area2">
             <a href="/"><span className="joinus">Developer's Login</span></a>
         </div>
 
-        <div className="developers-content">
+        <div className="developers-content offset-2 col-9">
             <div className="peoples">
                 <div className="avtar">
                     <img src={avatar} alt="avtar"/>
