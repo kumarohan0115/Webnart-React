@@ -16,6 +16,17 @@ const Workshopregistration = () => {
     preknowledge:"",
     option:""
   })
+
+  const disable=()=>{
+    const data = document.getElementsByTagName('input');
+    if(data===""){
+      console.log("no data found");
+    }
+    else{
+      console.log();
+    }
+  }
+  disable();
   
   const register=()=>{
     console.log(user);
@@ -64,23 +75,24 @@ const Workshopregistration = () => {
         ( 
         <div className="form-div col-lg-5 col-md-8 col-sm-12">
           <div className="heading">
-            <h2>React JS Workshop Registration</h2>
+            <h2>React Js Workshop Registration</h2>
           </div>
           <div className='form-group workshop-form'>
               <label htmlFor="">Name</label>
               <input className="form-control" type = "text" name = "fullname" id = "name"  placeholder='Full Name'onChange={handleinput} value={user.fullname}  required/>
               
               <label htmlFor="">Branch</label>
-              <input className="form-control" type = "text" name = "branch" id = "branch" placeholder='Branch' onChange={handleinput} value={user.branch} autoCapitalize required/>
+              <input className="form-control" type = "text" name = "branch" id = "branch" placeholder='Branch' maxLength={3} onChange={handleinput} value={user.branch} autoCapitalize="true" required/>
               
               <label htmlFor="">Year</label>
-              <input className="form-control" type = "text" name = "year" id = "year" placeholder='Year'onChange={handleinput} value={user.year}  required/> 
+              <input className="form-control" type = "number" name = "year" id = "year" placeholder='Year' maxLength={1} max={4} min={2} onChange={handleinput} value={user.year}  required/> 
               
               <label htmlFor="">Email</label>
               <input className="form-control" type = "email" name = "email" id = "email"  placeholder='Email'onChange={handleinput} value={user.email}  required/>
               
               <label htmlFor="">Contact No.</label>
               <input className="form-control" type = "tel" name = "phone" id = "phone"  placeholder='10 Digit Contact No.'onChange={handleinput} value={user.phone} minLength={10} maxLength={10} required/>
+              <span>Do not include +91-</span>
               
               <label htmlFor="">Pre Aquired Knowledge   (if don't know any thing leave blank!)</label>
               <input className="form-control" type = "text" name = "preknowledge" id = "preknowledge" placeholder='Pre Aquired Knowledge of web-Development...' onChange={handleinput} value={user.preknowledge} />
@@ -89,7 +101,7 @@ const Workshopregistration = () => {
               <label htmlFor="">Available for WorkShop</label>
               <input className="form-control" type = "text" name = "option" id = "option" placeholder='Available for offline Workshop' onChange={handleinput} value={user.option} />
               
-              <button className="btn btn-sm btn-success" onClick={register} >Submit </button>
+              <button className="btn btn-sm btn-success" onClick={register}>Submit </button>
           </div>
         </div>
         )
