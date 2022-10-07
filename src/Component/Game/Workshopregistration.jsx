@@ -1,8 +1,9 @@
 import React from 'react'
 import './workshop-form.css'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import axios from '../../axios'
 import Navbar from '../Navbar/Navbar'
+import { isDisabled } from '@testing-library/user-event/dist/utils'
 
 const Workshopregistration = () => {
   
@@ -16,6 +17,18 @@ const Workshopregistration = () => {
     preknowledge:"",
     option:""
   })
+
+  useEffect(() => {
+    if(user.fullname ==="" || user.option ==="" || user.phone ==="" || user.email ==="" || user.year ==="" || user.branch ===""){
+      document.getElementById("submit-btn").setAttribute('disabled',true);
+    }
+    else{
+      console.log('entered')
+      document.getElementById("submit-btn").removeAttribute('disabled');
+      console.log('exit')
+    }
+  }, [user])
+  
 
   const disable=()=>{
     const data = document.getElementsByTagName('input');
@@ -101,7 +114,7 @@ const Workshopregistration = () => {
               <label htmlFor="">Available for WorkShop</label>
               <input className="form-control" type = "text" name = "option" id = "option" placeholder='Available for offline Workshop' onChange={handleinput} value={user.option} />
               
-              <button className="btn btn-sm btn-success" onClick={register}>Submit </button>
+              <button className="btn btn-sm btn-success" id='submit-btn' disabled onClick={register}>Submit </button>
           </div>
         </div>
         )

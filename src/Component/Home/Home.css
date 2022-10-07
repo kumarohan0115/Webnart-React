@@ -211,7 +211,6 @@ a{
     background-image: url("../../Assets/unknown.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
     font-family: 'Montserrat', sans-serif;
     height: fit-content;
     overflow: hidden;
@@ -303,6 +302,7 @@ a{
 .left-content{
     width:700px;
     padding: 0 0 0 0;
+    text-align: center;
 }
 .q-div{
     background-color: #eff5f6;
@@ -329,7 +329,8 @@ a{
    
     
     margin-top:0;
-    background-color: #FFD3B6;
+    /* background-color: #FFD3B6; */
+    background-color: var(--founder-tile-bgColor);
     border-radius: 10px;
     height: 300px;
     width:250px;
@@ -343,7 +344,8 @@ a{
 }
 .tiles-l-h{
     margin-top: 0;
-    background-color: #FFD3B6;
+    /* background-color: #FFD3B6; */
+    background-color: var(--founder-tile-bgColor);
     border-radius: 10px;
     height: 300px;
     width:250px;
@@ -357,8 +359,10 @@ a{
 }
 
 .tiles-c{
+    position: relative;
     margin-top:0;
-    background-color: #FFD3B6;
+    /* background-color: #FFD3B6; */
+    background-color: var(--founder-tile-bgColor);
     border-radius: 10px;
     height: 300px;
     width:250px;
@@ -369,8 +373,10 @@ a{
     /* display: inline-block; */
 }
 .tiles-c-h{
+    position: relative;
     margin-top:0;
-    background-color: #FFD3B6;
+    /* background-color: #FFD3B6; */
+    background-color: var(--founder-tile-bgColor);
     border-radius: 10px;
     height: 300px;
     width:250px;
@@ -383,7 +389,8 @@ a{
 }
 .tiles-r{
     margin-top:0;
-    background-color: #FFD3B6;
+    /* background-color: #FFD3B6; */
+    background-color: var(--founder-tile-bgColor);
     border-radius: 10px;
     height: 300px;
     width:250px;
@@ -396,7 +403,8 @@ a{
 }
 .tiles-r-h{
     margin-top:0px;
-    background-color: #FFD3B6;
+    /* background-color: #FFD3B6; */
+    background-color: var(--founder-tile-bgColor);
     border-radius: 10px;
     height: 300px;
     width:250px;
@@ -409,17 +417,15 @@ a{
     padding: 30px 10px 30px 10px ;
 }
 
-.t-udiv{
-color: blue;
-  margin-left:45%;
-  margin-bottom: 20px;
-  width: 30px;
-  height: 30px;
-  border-radius: 90px;
-  padding:4px;
-  background-color: rgb(255, 255, 255,0.5);  
-}
 
+
+.t-udiv img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    z-index: 2;
+    border: 2px solid white;
+}
 
 .tech-div{
     height: 400px;
@@ -430,8 +436,43 @@ color: blue;
 }
 
 
+#founderName{
+    font-weight: 800;
+}
 
 
+.founder-profile-card-element{
+    text-align: left;
+    list-style: none;
+    justify-content: left;
+    word-wrap:break-word;
+}
+
+.founder-profile-card-element li{
+    margin-top: 10px;
+}
+
+
+
+.tiles-c-h::before,
+.tiles-c::before,
+.tiles-l-h::before,
+.tiles-l::before,
+.tiles-r-h::before,
+.tiles-r::before,
+.tiles-r-h760::before
+{
+    content: "";
+    background: url('../../Assets/cardbg.png');
+    z-index: -1;
+    background-color: var(--color-blog);
+    height: 70px;
+    width: 250px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 @media screen and (max-height:450px){
@@ -553,7 +594,8 @@ color: blue;
     }
     .tiles-l-h{
         margin-top: 0;
-        background-color: #FFD3B6;
+        /* background-color: #FFD3B6; */
+        background-color: var(--founder-tile-bgColor);
         border-radius: 10px;
         height: 300px;
         width:250px;
@@ -567,7 +609,8 @@ color: blue;
     }
     .tiles-c-h{
         margin-top:0;
-        background-color: #FFD3B6;
+        /* background-color: #FFD3B6; */
+        background-color: var(--founder-tile-bgColor);
         border-radius: 10px;
         height: 300px;
         width:250px;
@@ -580,7 +623,8 @@ color: blue;
     }
     .tiles-r-h{
         margin-top:0px;
-        background-color: #FFD3B6;
+        /* background-color: #FFD3B6; */
+        background-color: var(--founder-tile-bgColor);
         border-radius: 10px;
         height: 300px;
         width:250px;
@@ -600,7 +644,9 @@ color: blue;
     }
     .tiles-r-h760{
         
-        background-color: #FFD3B6;
+        /* background-color: #FFD3B6; */
+    background-color: var(--founder-tile-bgColor);
+
         border-radius: 10px;
         height: 300px;
         width:250px;
@@ -766,7 +812,8 @@ color: blue;
 /* Footer----------------------------------> */
 
 .footer{
-    background-color:gray;
+    /* background-color:gray; */
+    background-color: var(--color-footer);
     color: white;
     font-size: 1.3rem;
 }

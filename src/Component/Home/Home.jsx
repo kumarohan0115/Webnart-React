@@ -9,6 +9,10 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InfoIcon from "@mui/icons-material/Info";
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import { useState, useEffect } from "react";
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LanguageIcon from '@mui/icons-material/Language';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import avtar from '../../Assets/avtart.png'
 
 const Home = () => {
 
@@ -113,6 +117,15 @@ const Home = () => {
     console.log(quotes[i].quote);
   }, [i])
 
+
+  const founderName=
+    {
+      name1:"Vishal Pal",
+      name2:"Rohan Kumar",
+      name3:"Shahank Chaurasia"
+    }
+  
+  console.log(founderName.name1);
 
   return (
     <>
@@ -222,42 +235,56 @@ const Home = () => {
               <p>
                 <FormatQuoteIcon id="quote" />{quot}<FormatQuoteIcon id='quote'/>
               </p>
-            </div>
+            </div><br/>
+            <h2>Founders & Developers</h2>
             <div className="tiles-div " id="tiles-div">
               <div className="tiles-l text-center" id="l-t"
                 onMouseLeave={ltLeave}
                 onMouseEnter={ltEnter}>
                 <div className="t-udiv">
-                  <AccountCircleIcon />
+                  {/* <AccountCircleIcon /> */}
+                  <img src={avtar} alt="avtar" />
                 </div>
-                <p id="art-name">Name</p>
-                <p id="art-des">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p id="founderName">{founderName.name1}</p>
+                <p id="founderDesc">MERN Stack Developer</p>
+                <ul className="founder-profile-card-element">
+                  <li><MailOutlineIcon/>vishalpal2912@gmail.com</li>
+                 
+                  <li><LocationOnIcon/>Delhi</li>
+                </ul>
               </div>
               <div className="tiles-c-h text-center" id="c-t">
                 <div className="t-udiv">
-                  <AccountCircleIcon />
+                  {/* <AccountCircleIcon /> */}
+                  <img src={avtar} alt="avtar" />
                 </div>
-                <p id="web-name">Name</p>
-                <p id="web-des">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.
+                <p id="founderName">{founderName.name2}</p>
+                <p id="founderDesc">
+                  Front End Developer
                 </p>
+                <ul className="founder-profile-card-element">
+                  <li><MailOutlineIcon/>rohankr350@gmail.com</li>
+                  
+                  <li><LocationOnIcon/>Delhi</li>
+                </ul>
               </div>
               <div className="tiles-r text-center" id="r-t"
                 onMouseLeave={rtLeave}
                 onMouseEnter={rtEnter}
               >
                 <div className="t-udiv">
-                  <AccountCircleIcon />
+                  {/* <AccountCircleIcon /> */}
+                  <img src={avtar} alt="avtar" />
                 </div>
-                <p id="game-name">Name</p>
-                <p id="game-des">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.
+                <p id="founderName">{founderName.name3}</p>
+                <p id="founderDesc">
+                  Back End Developer
                 </p>
+                <ul className="founder-profile-card-element">
+                  <li><MailOutlineIcon/>shashank.chaurasia1606@gmail.com</li>
+
+                  <li><LocationOnIcon/>Delhi</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -265,24 +292,27 @@ const Home = () => {
           <div className="tiles-div760" id="tiles-div760">
             <div className="tiles-r-h760 text-center" id="l-t">
               <div className="t-udiv">
-                <AccountCircleIcon />
+                {/* <AccountCircleIcon /> */}
+                <img src={avtar} alt="avtar" />
               </div>
-              <p id="art-name">Hello</p>
-              <p id="art-des">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p id="founderName">{founderName.name1}</p>
+              <p id="founderDesc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div className="tiles-r-h760 text-center" id="c-t">
               <div className="t-udiv">
-                <AccountCircleIcon />
+                {/* <AccountCircleIcon /> */}
+                <img src={avtar} alt="avtar" />
               </div>
-              <p id="web-name">Name</p>
-              <p id="web-des">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p id="founderName">{founderName.name2}</p>
+              <p id="founderDesc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div className="tiles-r-h760 text-center" id="r-t">
               <div className="t-udiv">
-                <AccountCircleIcon />
+                {/* <AccountCircleIcon /> */}
+                <img src={avtar} alt="avtar" />
               </div>
-              <p id="game-name">class</p>
-              <p id="game-des">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p id="founderName">{founderName.name3}</p>
+              <p id="founderDesc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
 
