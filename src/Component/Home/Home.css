@@ -304,6 +304,12 @@ a{
     padding: 0 0 0 0;
     text-align: center;
 }
+
+.left-content h2{
+    color: whitesmoke;
+    font-weight: 800;
+}
+
 .q-div{
     background-color: #eff5f6;
     border-radius: 20px;
@@ -445,12 +451,16 @@ a{
     text-align: left;
     list-style: none;
     justify-content: left;
-    word-wrap:break-word;
 }
 
 .founder-profile-card-element li{
     margin-top: 10px;
+    word-break: break-all;
 }
+/* .founder-profile-card-element li p{
+    text-align: justify;
+} */
+
 
 
 
@@ -513,20 +523,19 @@ a{
 
 
 @media screen and (max-width:1276px)  {
-    .left-content{
+    /* .left-content{
         width:500px;
-    }
+    } */
     .tech-div{
         width:350px;
     }
     
 }
 @media screen and (max-width:1078px)  {
-    .left-content{
+    /* .left-content{
         width: 90%;
         margin: 5px;
-        
-    }
+    } */
     .tech-div{
         width:350px;
     }

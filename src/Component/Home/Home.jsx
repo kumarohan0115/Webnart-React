@@ -248,9 +248,9 @@ const Home = () => {
                 <p id="founderName">{founderName.name1}</p>
                 <p id="founderDesc">MERN Stack Developer</p>
                 <ul className="founder-profile-card-element">
-                  <li><MailOutlineIcon/>vishalpal2912@gmail.com</li>
+                  <li><MailOutlineIcon/>  vishalpal2912@gmail.com</li>
                  
-                  <li><LocationOnIcon/>Delhi</li>
+                  <li><LocationOnIcon/>  Delhi</li>
                 </ul>
               </div>
               <div className="tiles-c-h text-center" id="c-t">
@@ -263,9 +263,9 @@ const Home = () => {
                   Front End Developer
                 </p>
                 <ul className="founder-profile-card-element">
-                  <li><MailOutlineIcon/>rohankr350@gmail.com</li>
+                  <li><MailOutlineIcon/>  rohankr350@gmail.com</li>
                   
-                  <li><LocationOnIcon/>Delhi</li>
+                  <li><LocationOnIcon/>  Delhi</li>
                 </ul>
               </div>
               <div className="tiles-r text-center" id="r-t"
@@ -281,9 +281,9 @@ const Home = () => {
                   Back End Developer
                 </p>
                 <ul className="founder-profile-card-element">
-                  <li><MailOutlineIcon/>shashank.chaurasia1606@gmail.com</li>
+                  <li><MailOutlineIcon/>  shashank.chaurasia1606@gmail.com</li>
 
-                  <li><LocationOnIcon/>Delhi</li>
+                  <li><LocationOnIcon/>  Delhi</li>
                 </ul>
               </div>
             </div>
@@ -296,7 +296,11 @@ const Home = () => {
                 <img src={avtar} alt="avtar" />
               </div>
               <p id="founderName">{founderName.name1}</p>
-              <p id="founderDesc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <ul className="founder-profile-card-element">
+                  <li><MailOutlineIcon/>  vishalpal2912@gmail.com</li>
+                 
+                  <li><LocationOnIcon/>  Delhi</li>
+                </ul>
             </div>
             <div className="tiles-r-h760 text-center" id="c-t">
               <div className="t-udiv">
@@ -304,7 +308,11 @@ const Home = () => {
                 <img src={avtar} alt="avtar" />
               </div>
               <p id="founderName">{founderName.name2}</p>
-              <p id="founderDesc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <ul className="founder-profile-card-element">
+                  <li><MailOutlineIcon/>  rohankr350@gmail.com</li>
+                  
+                  <li><LocationOnIcon/>  Delhi</li>
+                </ul>
             </div>
             <div className="tiles-r-h760 text-center" id="r-t">
               <div className="t-udiv">
@@ -312,7 +320,11 @@ const Home = () => {
                 <img src={avtar} alt="avtar" />
               </div>
               <p id="founderName">{founderName.name3}</p>
-              <p id="founderDesc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <ul className="founder-profile-card-element">
+                  <li><MailOutlineIcon/>  shashank.chaurasia1606@gmail.com</li>
+
+                  <li><LocationOnIcon/>  Delhi</li>
+                </ul>
             </div>
           </div>
 
