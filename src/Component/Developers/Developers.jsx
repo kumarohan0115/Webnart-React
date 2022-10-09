@@ -1,17 +1,13 @@
 import React,{useState} from 'react'
 import './developers.css'
-import $ from 'jquery';
 import avatar from '../../Assets/avtart.png'
 import SideNav from '../Navbar/SideNav';
 import Navbar from '../Navbar/Navbar';
-
-
 import HomeIcon from '@mui/icons-material/Home';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import BookIcon from '@mui/icons-material/Book';
 import DevicesIcon from '@mui/icons-material/Devices';
 import AlignHorizontalLeftIcon from '@mui/icons-material/AlignHorizontalLeft';
-import { display } from '@mui/system';
 
 const Developers = () => {
 
@@ -53,12 +49,22 @@ const Developers = () => {
           };
         
 
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("topbar").style.width = scrolled + "%";
+    }
+
   return (
     <div className="developers-main-div">
         <Navbar button_name={'Join As Developer'}/>
         <div className="side-area1">
             <AlignHorizontalLeftIcon id="menu-icon" onClick={toggleClass}/>
         </div>
+        <div className="progress-bar" id="topbar"></div>
 
         <SideNav ClassName="{isActive ? 'active': null}, " id="side_nav_developer" name={developersSideNav} logo={logo} />
         

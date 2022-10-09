@@ -2,7 +2,6 @@ import React from "react";
 import $ from 'jquery';
 import "./Home.css";
 import quotes from './quotes.json'
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -10,7 +9,6 @@ import InfoIcon from "@mui/icons-material/Info";
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import { useState, useEffect } from "react";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import LanguageIcon from '@mui/icons-material/Language';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import avtar from '../../Assets/avtart.png'
 
@@ -118,14 +116,12 @@ const Home = () => {
   }, [i])
 
 
-  const founderName=
-    {
-      name1:"Vishal Pal",
-      name2:"Rohan Kumar",
-      name3:"Shahank Chaurasia"
-    }
+  const founderName={
+    name1:"Vishal Pal",
+    name2:"Rohan Kumar",
+    name3:"Shahank Chaurasia"
+  }
   
-  console.log(founderName.name1);
 
   return (
     <>
