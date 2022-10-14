@@ -1,0 +1,56 @@
+.animBox{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh; 
+   background: rgb(30, 30, 30);
+}
+
+@keyframes borderAnimation {
+    
+    from{
+        border: 8px solid red;
+    }
+
+    to{
+        border: 8px solid white;
+    }
+
+}
+
+.loginForm{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: rgb(21, 21, 21);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    animation: borderAnimation 2s infinite;
+}
+
+
+
+.loginForm label{
+    margin-top: 2rem;
+    color: white;
+}
+
+.loginForm h1{
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.loginForm .inputField{
+    height: 0;
+    outline: none;
+}
+.inputFieldexpand{
+    height: 30px !important;
+}
+
+.loginForm::before{
+    content: "";
+    position: absolute;
+}

@@ -15,6 +15,7 @@ import HomeLogin from './Component/Credencials/HomeLogin';
 import Register from './Register';
 import Workshopregistration from './Component/Game/Workshopregistration';
 import Tnslogin from './Component/Game/Tnslogin';
+import AnimationForm from './Component/Credencials/AnimatedForm';
 
 function App() {
   return (
@@ -43,6 +44,8 @@ function App() {
           <Route exact path="/workshopregitrstion" element={<Workshopregistration/>}>
           </Route>
           <Route exact path="/tnslogin" element={<Tnslogin/>}>
+          </Route>
+          <Route exact path="/animationform" element={<AnimationForm/>}>
           </Route>
         </Routes>
       </BrowserRouter>

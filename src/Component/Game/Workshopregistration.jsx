@@ -3,7 +3,6 @@ import './workshop-form.css'
 import { useState,useEffect } from 'react'
 import axios from '../../axios'
 import Navbar from '../Navbar/Navbar'
-import { isDisabled } from '@testing-library/user-event/dist/utils'
 
 const Workshopregistration = () => {
   
@@ -114,11 +113,11 @@ const Workshopregistration = () => {
               <label htmlFor="">Available for WorkShop</label>
               <input className="form-control" type = "text" name = "option" id = "option" placeholder='Available for offline Workshop' onChange={handleinput} value={user.option} />
               
-              <button className="btn btn-sm btn-success" id='submit-btn' disabled onClick={register}>Submit </button>
+              <button className="btn btn-sm btn-success" id='submit-btn' onClick={register}>Submit </button>
           </div>
         </div>
-        )
-        }
+         )
+        } 
         <div className='popup'>
           <div className='popupdata'>
             <h1>Important Notice</h1>
