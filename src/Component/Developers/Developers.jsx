@@ -34,11 +34,6 @@ const Developers = () => {
         },
     
     ]
-
-    const logo=[{
-        'logo':'https://t4.ftcdn.net/jpg/04/64/64/09/360_F_464640910_Bid7MoSLjzV6wv6Ukhks0sx9EhDgljIw.jpg'
-    }]
-
     
     
     const [isActive, setActive] = useState(false);
@@ -66,7 +61,7 @@ const Developers = () => {
         </div>
         <div className="progress-bar" id="topbar"></div>
 
-        <SideNav ClassName="{isActive ? 'active': null}, " id="side_nav_developer" name={developersSideNav} logo={logo} />
+        <SideNav ClassName="{isActive ? 'active': null}, " id="side_nav_developer" name={developersSideNav} logo={'https://t4.ftcdn.net/jpg/04/64/64/09/360_F_464640910_Bid7MoSLjzV6wv6Ukhks0sx9EhDgljIw.jpg'} />
         
         <div className="side-area2">
             <a href="/"><span className="joinus">Developer's Login</span></a>

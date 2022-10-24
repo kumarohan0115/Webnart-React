@@ -3,12 +3,13 @@ import './sidenav.css'
 
 
 const SideNav = ({ name, logo}) => {
-  // console.log(logos.img);
+  console.log(logo);
+  console.log(name);
 
   return (
     <div className='sidenav'>
       <div className="section-logo">
-        <img id='logo' src={logo[0].logo} alt="img" />
+        <img id='logo' src={logo} alt="img" />
       </div>
       <ul>
         {name.map((list, i) => (

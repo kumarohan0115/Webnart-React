@@ -42,6 +42,7 @@ const Workshopregistration = () => {
   
   const register=()=>{
     console.log(user);
+    document.getElementById("submit-btn").setAttribute('disabled',true);
     axios.post('/register', {
       fullname:user.fullname,
       branch:user.branch,
@@ -81,7 +82,7 @@ const Workshopregistration = () => {
         {
         success ?(
             <section>
-                <h1>Submitted Succefully!</h1>
+                <h1>Submitted Successfully!</h1>
             </section>
         ):
         ( 

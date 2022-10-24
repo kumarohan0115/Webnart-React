@@ -13,9 +13,10 @@ import {
 } from 'react-router-dom';
 import HomeLogin from './Component/Credencials/HomeLogin';
 import Register from './Register';
-import Workshopregistration from './Component/Game/Workshopregistration';
+import Workshopregistration from './Component/Workshop/Workshopregistration';
 import Tnslogin from './Component/Game/Tnslogin';
 import AnimationForm from './Component/Credencials/AnimatedForm';
+import GameHome from './Component/Game/GameHome';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
           <Route exact path="/Devefolio" element={<Devfolio/>}>
           </Route>
           <Route exact path="/developers" element={<Developers/>}>
+          </Route>
+          <Route exact path="/gamehome" element={<GameHome/>}>
           </Route>
           <Route exact path="/artgallary" element={<ArtGallary/>}>
           </Route>

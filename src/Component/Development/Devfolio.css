@@ -33,65 +33,116 @@
   .templet{
     position: relative;
   }
-
-  .templet #bookmark{
-    display: none;
+  
+  .liked{
+    display: block;
     position: absolute;
     top: 2rem;
-    right: 1rem;
+    right: 2rem;
+    color: red !important;
+    cursor: pointer;
+  }
+  .templet .unliked{
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     color: white;
     cursor: pointer;
   }
+  
 
-  .templet:hover #bookmark{
-    display: inherit;
-  }
-
-  .overlay{
+  .overlay-l{
     position: absolute;
     overflow: hidden;
     color: white;
-    bottom: 0;
-    height: 26px;
+    top: 1.1rem;
+    left: 0;
+    height: 93.5%;
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    align-items: center;
+    width: 25px;
     text-align: center;
     z-index: 1;
     background-color: rgba(46, 46, 46, 0.5);
-    opacity: 0.7;
+    opacity: 0.8;
     border-radius: 5px;
   }
+  .overlay-r{
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    top: 1.1rem;
+    right: 0;
+    height: 93.5%;
+    display: flex;
+    align-items: center;
+    width: 25px;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(46, 46, 46, 0.5);
+    opacity: 0.8;
+    border-radius: 5px;
+  }
+  
+  
+  .overlay-r #arrow{
+    transform: rotate(180deg);
+  }
 
+  .overlay-r #description p{
+    padding: 5px;
+    text-align: justify;
+  }
+  
+  .developer_profile{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  
   @keyframes details {
     from{
-      haight:50px;
-      opacity: 0.4;
+      width:50px;
+      opacity: 0;
     }
     to{
-      height:93.5%;
+      width:100%;
       opacity: 1;
     }
   }
+  
+  .collaps{
+    width:25px !important;
+  }
+  
+  
+  .overlay-l:hover{
+    animation: 2s details both;
+    background-color: rgb(35, 35, 35);
+    border-radius: 8px;
+    z-index: 2;
+  }
 
-  .overlay:hover{
-    animation: 1s details both;
+  .overlay-r:hover{
+    animation: 2s details both;
     background-color: rgb(35, 35, 35);
     border-radius: 8px;
   }
 
-  .overlay .profile img{
+  .overlay-l .profile img{
     border-radius: 50%;
     height: 100px;
     width: 100px;
   }
   
-  .overlay .profile{
+  .overlay-l .profile{
     margin: auto;
   }
 
   
-  .overlay #description{
+  .overlay-l #description{
     color: black;
     font-weight: 600;
     width: 100%;
@@ -106,30 +157,20 @@
     cursor:pointer;
     z-index: 2;
   }
+
   
-  @keyframes expand {
-    from{
-      min-height:0.1px;
-      opacity: 0;
-    }
-    to{
-      border-radius: 0px;
-      min-height: 100%;
-      opacity: 1;
-      margin-top: -26px;
-    }
+  .overlay-l:hover #arrow{
+    transform: rotate(180deg);
   }
-
-  .overlay #expand:hover #arrow{
-    transform: rotate(90deg);
-    color: antiquewhite;
+  .overlay-r:hover #arrow{
+    transform: rotate(360deg);
   }
-
-  .overlay #expand:hover + .overlay{
+  
+  .overlay-l #expand:hover + .overlay-l{
     background-color: antiquewhite;
   }
 
-  .overlay #expand:hover + #description{
+  .overlay-l #expand:hover + #description{
     animation: 1s expand both;
   }
 

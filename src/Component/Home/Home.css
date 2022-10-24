@@ -331,6 +331,13 @@ a{
     cursor: pointer;
 }
 
+/* .tiles-c,.tiles-c-h,
+.tiles-l,.tiles-l-h,
+.tiles-r,.tiles-r-h
+.tiles-r-h760,.tiles-r-h{
+    backdrop-filter: blur(15px);
+} */
+
 .tiles-l{
    
     

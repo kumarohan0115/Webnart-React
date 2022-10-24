@@ -216,7 +216,7 @@ const Home = () => {
         <div className="top-nav" id="top-nav">
           <div className="top-nav-con" id="top-nav-con">
             <a href="/Devefolio">Development</a>
-            <a href="shashaVW.php">Game</a>
+            <a href="/gamehome">Game</a>
             <a href="/ArtGallary">Arts</a>
             <a href="/">Future</a>
           </div>
