@@ -25,10 +25,12 @@
     display: none;
 }
 .sidenav ul li:hover{
-    background-color: rgb(81, 81, 81);
+    background-color: white;
     box-shadow: inset 4px 0px 0px 0px red;
     border-radius: 5px 0 0 5px ;
-    /* border: 1px 0 1px 0 solid black; */
+}
+.sidenav ul li:hover> a{
+    color: black;
 }
 .sidenav ul li:hover div{
     display: flex;

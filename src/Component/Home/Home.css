@@ -448,6 +448,25 @@ a{
     width:400px;
 }
 
+.tech-div h2{
+    color: bisque;
+    text-align: center;
+    margin-bottom: -2rem;
+}
+
+.tech-div ul{
+    padding: 2rem;
+    color: white;
+}
+
+.tech-div ul li{
+    list-style: none;
+    margin:1rem 0;
+}
+.tech-div ul li ol{
+    margin: 0.5rem 0.5rem;
+}
+
 
 #founderName{
     font-weight: 800;
@@ -794,7 +813,8 @@ a{
         flex-wrap: wrap;
     }
     .tech-div {
-        width: 200px;
+        width: 300px;
+        height: fit-content;
     }
 }
 

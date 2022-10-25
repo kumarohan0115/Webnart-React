@@ -5,8 +5,7 @@
   }
 
   #developer-div{
-    background: rgb(81, 81, 81);
-    /* background: #1f1f1f; */
+    background: white
   }
 
   .dev-templet-row{
@@ -27,11 +26,17 @@
       width: 350px;
       height: 250px;
       border-radius: 8px;
-      margin-top: 5%;
   }
 
   .templet{
     position: relative;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 8px;
+    margin-bottom: 5%;
+  }
+  .templet:hover{
+    box-shadow: 0px 0px 15px rgb(107, 107, 107);
+    
   }
   
   .liked{
@@ -55,33 +60,31 @@
   .overlay-l{
     position: absolute;
     overflow: hidden;
-    color: white;
-    top: 1.1rem;
+    top: 0;
     left: 0;
-    height: 93.5%;
+    height: 100%;
     display: flex;
     align-items: center;
     width: 25px;
     text-align: center;
     z-index: 1;
-    background-color: rgba(46, 46, 46, 0.5);
-    opacity: 0.8;
+    background-color: #f7f7f7;
+    opacity: 0.2;
     border-radius: 5px;
   }
   .overlay-r{
     position: absolute;
     overflow: hidden;
-    color: white;
-    top: 1.1rem;
+    top: 0;
     right: 0;
-    height: 93.5%;
+    height: 100%;
     display: flex;
     align-items: center;
     width: 25px;
     text-align: center;
     z-index: 1;
-    background-color: rgba(46, 46, 46, 0.5);
-    opacity: 0.8;
+    background-color: #f7f7f7;
+    opacity: 0.2;
     border-radius: 5px;
   }
   
@@ -120,14 +123,18 @@
   
   .overlay-l:hover{
     animation: 2s details both;
-    background-color: rgb(35, 35, 35);
+    color: white;
+    background: linear-gradient(#FFA700,#8f5d01);
+    box-shadow: 0px 0px 12px gray;
     border-radius: 8px;
     z-index: 2;
   }
 
   .overlay-r:hover{
     animation: 2s details both;
-    background-color: rgb(35, 35, 35);
+    color: white;
+    background: linear-gradient(#D11141,#8b0224);
+    box-shadow: 0px 0px 12px gray;
     border-radius: 8px;
   }
 

@@ -1,8 +1,7 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import Navbar from '../Navbar/Navbar';
 import SideNav from '../Navbar/SideNav';
 import './Devfolio.css'
-import $ from 'jquery';
 
 import HomeIcon from '@mui/icons-material/Home';
 import EventNoteIcon from '@mui/icons-material/EventNote';
@@ -67,7 +66,7 @@ const DevFolio = () => {
                     <div className="temp-row row">
                         {/* Showcase Templet --------------------------*/}
                         <div className="templet">
-                            <img id='image' alt="" src="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                            <img id='image' alt="" src="https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template-388x306.jpg" />
                             
                             <span id='unliked' className='unliked' onClick={like}><FavoriteIcon/></span>
                             
@@ -80,15 +79,162 @@ const DevFolio = () => {
                                         <img src={Avatar} alt="" />
                                     </div>
 
-                                    <h4>Developer Name</h4>
+                                    <h4>Developer/Designer Name</h4>
+                                    <h5>Designation</h5>
 
-                                    <button className='btn btn-outline-primary'>Get In Touch</button>
+                                    <button className='btn btn-outline-light'>Get In Touch</button>
                                 </div>
                             </div>
                             <div className="overlay-r">
 
                                 <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
                                 <div id='description'>
+                                    <h3>About </h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, sapiente aliquid. Cum atque voluptates, quos repudiandae vel laboriosam recusandae blanditiis iusto ipsum, a ullam, omnis beatae. Quia labore dignissimos aperiam.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div className="templet">
+                            <img id='image' alt="" src="https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template-388x306.jpg" />
+                            
+                            <span id='unliked' className='unliked' onClick={like}><FavoriteIcon/></span>
+                            
+                            <div className="overlay-l">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                
+                                <div className="developer_profile">
+                                    <div className="profile">
+                                        <img src={Avatar} alt="" />
+                                    </div>
+
+                                    <h4>Developer/Designer Name</h4>
+                                    <h5>Designation</h5>
+
+                                    <button className='btn btn-outline-light'>Get In Touch</button>
+                                </div>
+                            </div>
+                            <div className="overlay-r">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                <div id='description'>
+                                    <h3>About </h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, sapiente aliquid. Cum atque voluptates, quos repudiandae vel laboriosam recusandae blanditiis iusto ipsum, a ullam, omnis beatae. Quia labore dignissimos aperiam.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div className="templet">
+                            <img id='image' alt="" src="https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template-388x306.jpg" />
+                            
+                            <span id='unliked' className='unliked' onClick={like}><FavoriteIcon/></span>
+                            
+                            <div className="overlay-l">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                
+                                <div className="developer_profile">
+                                    <div className="profile">
+                                        <img src={Avatar} alt="" />
+                                    </div>
+
+                                    <h4>Developer/Designer Name</h4>
+                                    <h5>Designation</h5>
+
+                                    <button className='btn btn-outline-light'>Get In Touch</button>
+                                </div>
+                            </div>
+                            <div className="overlay-r">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                <div id='description'>
+                                    <h3>About </h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, sapiente aliquid. Cum atque voluptates, quos repudiandae vel laboriosam recusandae blanditiis iusto ipsum, a ullam, omnis beatae. Quia labore dignissimos aperiam.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div className="templet">
+                            <img id='image' alt="" src="https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template-388x306.jpg" />
+                            
+                            <span id='unliked' className='unliked' onClick={like}><FavoriteIcon/></span>
+                            
+                            <div className="overlay-l">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                
+                                <div className="developer_profile">
+                                    <div className="profile">
+                                        <img src={Avatar} alt="" />
+                                    </div>
+
+                                    <h4>Developer/Designer Name</h4>
+                                    <h5>Designation</h5>
+
+                                    <button className='btn btn-outline-light'>Get In Touch</button>
+                                </div>
+                            </div>
+                            <div className="overlay-r">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                <div id='description'>
+                                    <h3>About </h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, sapiente aliquid. Cum atque voluptates, quos repudiandae vel laboriosam recusandae blanditiis iusto ipsum, a ullam, omnis beatae. Quia labore dignissimos aperiam.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div className="templet">
+                            <img id='image' alt="" src="https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template-388x306.jpg" />
+                            
+                            <span id='unliked' className='unliked' onClick={like}><FavoriteIcon/></span>
+                            
+                            <div className="overlay-l">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                
+                                <div className="developer_profile">
+                                    <div className="profile">
+                                        <img src={Avatar} alt="" />
+                                    </div>
+
+                                    <h4>Developer/Designer Name</h4>
+                                    <h5>Designation</h5>
+
+                                    <button className='btn btn-outline-light'>Get In Touch</button>
+                                </div>
+                            </div>
+                            <div className="overlay-r">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                <div id='description'>
+                                    <h3>About </h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, sapiente aliquid. Cum atque voluptates, quos repudiandae vel laboriosam recusandae blanditiis iusto ipsum, a ullam, omnis beatae. Quia labore dignissimos aperiam.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div className="templet">
+                            <img id='image' alt="" src="https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template-388x306.jpg" />
+                            
+                            <span id='unliked' className='unliked' onClick={like}><FavoriteIcon/></span>
+                            
+                            <div className="overlay-l">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                
+                                <div className="developer_profile">
+                                    <div className="profile">
+                                        <img src={Avatar} alt="" />
+                                    </div>
+
+                                    <h4>Developer/Designer Name</h4>
+                                    <h5>Designation</h5>
+
+                                    <button className='btn btn-outline-light'>Get In Touch</button>
+                                </div>
+                            </div>
+                            <div className="overlay-r">
+
+                                <span id='expand' className="dc-btn" onClick={collapsed}><ArrowForwardIosIcon id='arrow'/></span>
+                                <div id='description'>
+                                    <h3>About </h3>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, sapiente aliquid. Cum atque voluptates, quos repudiandae vel laboriosam recusandae blanditiis iusto ipsum, a ullam, omnis beatae. Quia labore dignissimos aperiam.</p>
                                 </div>
                             </div>

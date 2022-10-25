@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0f0f0f;
+}
+
+#gameSidenav{
+    background: red !important;
+}
+
+.mainGame{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.latestcontent{
+    height: 350px;
+    background: linear-gradient(330deg,purple,pink);
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+.typesOfGame{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.o2Dgame{
+    background: linear-gradient(#D11141,#8b0224);
+    min-height: 300px;
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.o3Dgame{
+    background: linear-gradient(#FFA700,#8f5d01);
+    min-height: 300px;
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.o2Dgame h3,.o3Dgame h3{
+    background: white;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    color: black;
+    font-weight: 700;
+}
+
+.o2Dgame p,.o3Dgame p{
+    padding: 1rem;
+    color: white;
+}
+.o2Dgame .btn,.o3Dgame .btn{
+    margin-left: 5%;
+}

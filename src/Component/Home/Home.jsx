@@ -325,7 +325,20 @@ const Home = () => {
           </div>
 
           <div className="right-content">
-            <div className="tech-div"></div>
+            <div className="tech-div">
+                <h2>we are!</h2>
+              <ul>
+                <li> We follow our Dream's and will achieve soon</li>
+                <li> We are here to help you find your sparks as developer's and user's</li>
+                <li> By collecting Many platforms, gathered here to make a new collection WEBNART
+                  <ol>Web Development</ol>
+                  <ol>Game Development</ol>
+                  <ol>Art Development</ol>
+                  <ol>Learn and join us</ol>
+                </li>
+
+              </ul>
+            </div>
           </div>
         </div>
       </section>
