@@ -37,7 +37,7 @@ const DevFolio = () => {
             'icon':<DevicesIcon className='icon'/>,
         },
         {
-            'href':"/animationform",
+            'href':"",
             'name':"Saved",
             'icon':<BookmarksIcon className='icon'/>,
         }
