@@ -114,7 +114,7 @@ const Workshopregistration = () => {
               <label htmlFor="">Available for WorkShop</label>
               <input className="form-control" type = "text" name = "option" id = "option" placeholder='Available for offline Workshop' onChange={handleinput} value={user.option} />
               
-              <button className="btn btn-sm btn-success" id='submit-btn' onClick={register}>Submit </button>
+              <button className="workshop_btn btn btn-sm btn-success" id='submit-btn' onClick={register}>Submit </button>
           </div>
         </div>
          )

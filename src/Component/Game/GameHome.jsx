@@ -41,15 +41,15 @@ const GameHome = () => {
     <div id="gamehomepage">
         <Navbar button_name={'Game Login'}/>
         <SideNav id='gameSidenav' name={gamesidenav} logo={gamelogo}/>
-        <div className="mainGame container">
-            <div className="latestcontent offset-lg-1 col-lg-12 offset-md-2 col-md-10 offset-sm-3 col-sm-10"></div>
+        <div className="mainGame container-fluid">
+            <div className="latestcontent col-lg-12 col-md-12 col-sm-12"></div>
             <div className="typesOfGame">
-                <div className="o2Dgame offset-1 col-lg-5">
+                <div className="o2Dgame  col-lg-5  col-md-5  col-sm-12">
                     <h3>2D Game</h3>
                     <p>Beatae, doloribus molestias commodi odit iste minima officia fuga provident dolorem quibusdam magni. Nobis aspernatur quae reprehenderit, rem eligendi repellat deserunt reiciendis!</p>
-                    <button className='btn btn-outline-light btn-lg'>Let's Go!</button>
+                    <button className='btn btn-outline-light btn-lg'><a href="/2dgame">Let's Go!</a></button>
                 </div>
-                <div className="o3Dgame offset-2 col-lg-5">
+                <div className="o3Dgame  col-lg-5  col-md-5 col-sm-12">
                     <h3>3D Game</h3>
                     <p>Beatae, doloribus molestias commodi odit iste minima officia fuga provident dolorem quibusdam magni. Nobis aspernatur quae reprehenderit, rem eligendi repellat deserunt reiciendis!</p>
                     <button className='btn btn-outline-light btn-lg'>Let's Go!</button>

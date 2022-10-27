@@ -17,6 +17,7 @@ import Workshopregistration from './Component/Workshop/Workshopregistration';
 import Tnslogin from './Component/Game/Tnslogin';
 import AnimationForm from './Component/Credencials/AnimatedForm';
 import GameHome from './Component/Game/GameHome';
+import TwoDimensionGame from './Component/Game/TwoDimensionGame';
 
 function App() {
   return (
@@ -49,6 +50,8 @@ function App() {
           <Route exact path="/tnslogin" element={<Tnslogin/>}>
           </Route>
           <Route exact path="/animationform" element={<AnimationForm/>}>
+          </Route>
+          <Route exact path="/2dgame" element={<TwoDimensionGame/>}>
           </Route>
         </Routes>
       </BrowserRouter>

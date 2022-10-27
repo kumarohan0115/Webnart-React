@@ -15,6 +15,7 @@ body{
 .mainGame{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 250px;
 }
 
 .latestcontent{
@@ -25,6 +26,7 @@ body{
 }
 .typesOfGame{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     margin-top: 2rem;
 }
@@ -58,4 +60,32 @@ body{
 }
 .o2Dgame .btn,.o3Dgame .btn{
     margin-left: 5%;
+}
+
+
+@media screen and (max-width:992px) {
+    .typesOfGame{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .mainGame{
+        padding-left: 200px ;
+    }
+    .o2Dgame,.o3Dgame{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .mainGame{
+        padding-left: 150px ;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .mainGame{
+        padding-left: 1rem ;
+    }
 }

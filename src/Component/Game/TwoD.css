@@ -1,0 +1,88 @@
+.twoDgameSection{
+    padding-left: 250px;
+    margin-top: 5%;
+}
+
+.gamerow{
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+}
+
+.game_preview_thumbnail{
+    border-radius: 1rem 0 0 1rem;
+    height: 250px;
+    background: linear-gradient(#028090, #014048);
+}
+
+.game_details{
+    border-radius: 0 1rem 1rem 0;
+    min-height: 250px;
+    height: fit-content;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(#FF6F69, #803835);
+}
+
+.game_details h3{
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.game_details .shareGame{
+    display: flex;
+    justify-content: space-between;
+}
+.game_details .shareGame a{
+    margin: 0 0.5rem;
+}
+
+.game_details .shareGame a .addcss:hover{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (min-width:1200px) {
+    .game_details .shareGame{
+        margin-top: 6%;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .twoDgameSection{
+        margin-top: 8%;
+    }
+
+    .game_preview_thumbnail{
+        border-radius: 1rem;
+    }
+    .game_details{
+        border-radius: 1rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .twoDgameSection{
+        padding-left: 200px ;
+        margin-top: 12%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .twoDgameSection{
+        padding-left: 150px ;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .twoDgameSection{
+        padding-left: 1rem ;
+        padding: 1rem;
+    }
+}
