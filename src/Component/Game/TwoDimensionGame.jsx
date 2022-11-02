@@ -57,7 +57,7 @@ function truncateString(str, num) {
   return (
     <>
         {/* <GameSideNav/> */}
-        <Navbar/> 
+        <Navbar button_name={'Login'}/> 
         <SideNav name={twoDgameSideNav} logo={game2Dlogo}/>
         <div className="twoDgameSection container-fluid">
           <div className="gamerow">
@@ -74,14 +74,16 @@ function truncateString(str, num) {
               </div>
               <div className="shareGame">
                 <div className="shareHandles">
-                  <a href="/"><FacebookIcon className='addcss'/></a>
-                  <a href="/"><InstagramIcon className='addcss'/></a>
-                  <a href="/"><TwitterIcon className='addcss'/></a>
+                  <a href="https://en-gb.facebook.com/login.php"><FacebookIcon className='addcss'/></a>
+                  <a href="https://www.instagram.com/"><InstagramIcon className='addcss'/></a>
+                  <a href="https://twitter.com/login"><TwitterIcon className='addcss'/></a>
+                  <a href="detailed-game">More Details</a>
                 </div>
                 <button className="download-btn btn btn-outline-light">DOWNLOAD</button>
               </div>
             </div>
           </div>
+          
           <div className="gamerow">
             <div className="game_preview_thumbnail col-lg-6 col-md-12 col-sm-12"></div>
             <div className="game_details col-lg-6 col-md-12 col-sm-12">
@@ -96,14 +98,16 @@ function truncateString(str, num) {
               </div>
               <div className="shareGame">
                 <div className="shareHandles">
-                  <a href="/"><FacebookIcon className='addcss'/></a>
-                  <a href="/"><InstagramIcon className='addcss'/></a>
-                  <a href="/"><TwitterIcon className='addcss'/></a>
+                  <a href="https://en-gb.facebook.com/login.php"><FacebookIcon className='addcss'/></a>
+                  <a href="https://www.instagram.com/"><InstagramIcon className='addcss'/></a>
+                  <a href="https://twitter.com/login"><TwitterIcon className='addcss'/></a>
+                  <a href="detailed-game">More Details</a>
                 </div>
                 <button className="download-btn btn btn-outline-light">DOWNLOAD</button>
               </div>
             </div>
           </div>
+
           <div className="gamerow">
             <div className="game_preview_thumbnail col-lg-6 col-md-12 col-sm-12"></div>
             <div className="game_details col-lg-6 col-md-12 col-sm-12">
@@ -118,75 +122,10 @@ function truncateString(str, num) {
               </div>
               <div className="shareGame">
                 <div className="shareHandles">
-                  <a href="/"><FacebookIcon className='addcss'/></a>
-                  <a href="/"><InstagramIcon className='addcss'/></a>
-                  <a href="/"><TwitterIcon className='addcss'/></a>
-                </div>
-                <button className="download-btn btn btn-outline-light">DOWNLOAD</button>
-              </div>
-            </div>
-          </div>
-          <div className="gamerow">
-            <div className="game_preview_thumbnail col-lg-6 col-md-12 col-sm-12"></div>
-            <div className="game_details col-lg-6 col-md-12 col-sm-12">
-              <h3>Game Name</h3>
-              <div className="over_viewOfGame">
-                <p>
-                {truncateString(
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quod eligendi praesentium pariatur voluptas, aut rem! Debitis sunt illum fuga, ex, deserunt beatae ratione numquam dolor accusamus veritatis explicabo dolore.",
-                300
-                )}
-              </p>
-              </div>
-              <div className="shareGame">
-                <div className="shareHandles">
-                  <a href="/"><FacebookIcon className='addcss'/></a>
-                  <a href="/"><InstagramIcon className='addcss'/></a>
-                  <a href="/"><TwitterIcon className='addcss'/></a>
-                </div>
-                <button className="download-btn btn btn-outline-light">DOWNLOAD</button>
-              </div>
-            </div>
-          </div>
-          <div className="gamerow">
-            <div className="game_preview_thumbnail col-lg-6 col-md-12 col-sm-12"></div>
-            <div className="game_details col-lg-6 col-md-12 col-sm-12">
-              <h3>Game Name</h3>
-              <div className="over_viewOfGame">
-                <p>
-                {truncateString(
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quod eligendi praesentium pariatur voluptas, aut rem! Debitis sunt illum fuga, ex, deserunt beatae ratione numquam dolor accusamus veritatis explicabo dolore.",
-                300
-                )}
-              </p>
-              </div>
-              <div className="shareGame">
-                <div className="shareHandles">
-                  <a href="/"><FacebookIcon className='addcss'/></a>
-                  <a href="/"><InstagramIcon className='addcss'/></a>
-                  <a href="/"><TwitterIcon className='addcss'/></a>
-                </div>
-                <button className="download-btn btn btn-outline-light">DOWNLOAD</button>
-              </div>
-            </div>
-          </div>
-          <div className="gamerow">
-            <div className="game_preview_thumbnail col-lg-6 col-md-12 col-sm-12"></div>
-            <div className="game_details col-lg-6 col-md-12 col-sm-12">
-              <h3>Game Name</h3>
-              <div className="over_viewOfGame">
-                <p>
-                {truncateString(
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quod eligendi praesentium pariatur voluptas, aut rem! Debitis sunt illum fuga, ex, deserunt beatae ratione numquam dolor accusamus veritatis explicabo dolore.",
-                300
-                )}
-              </p>
-              </div>
-              <div className="shareGame">
-                <div className="shareHandles">
-                  <a href="/"><FacebookIcon className='addcss'/></a>
-                  <a href="/"><InstagramIcon className='addcss'/></a>
-                  <a href="/"><TwitterIcon className='addcss'/></a>
+                  <a href="https://en-gb.facebook.com/login.php"><FacebookIcon className='addcss'/></a>
+                  <a href="https://www.instagram.com/"><InstagramIcon className='addcss'/></a>
+                  <a href="https://twitter.com/login"><TwitterIcon className='addcss'/></a>
+                  <a href="detailed-game">More Details</a>
                 </div>
                 <button className="download-btn btn btn-outline-light">DOWNLOAD</button>
               </div>

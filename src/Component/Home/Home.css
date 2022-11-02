@@ -148,12 +148,13 @@ a{
     height: auto;
 }
 
-.nxt-btn{
+.nxt-btn button{
     width: fit-content;
     padding: 10px 20px 10px 20px;
     background-color: rgb(255, 255, 255,0.2);
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 30px;
+    color: white;
 }
 
 .signup-btn a{
@@ -733,9 +734,8 @@ a{
     .nxt-btn {
         width: fit-content;
         padding: 10px 20px 10px 20px;
-        background-color: rgb(255, 255, 255,0.2);
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 80px;
     }
     .main-con {
         color: white;

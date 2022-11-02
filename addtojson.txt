@@ -6,7 +6,7 @@ for Server---------------------------->
 "heroku-postbuild": "npm run build"
 
 For local host------------------------>
-// "start": "react-scripts start",
-// "build": "react-scripts build",
-// "test": "react-scripts test",
-// "eject": "react-scripts eject"
+"start": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject"

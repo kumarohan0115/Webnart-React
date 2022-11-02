@@ -17,7 +17,7 @@ const Navbar = ({button_name}) => {
             </div>
         </div>
         <div className="signup__navbar-sign">
-            <button type="button"><a href={(button_name==='Sign Up')?'/signup':'/login'}>{button_name}</a></button>
+            <a href={(button_name==='Sign Up')?'/signup':'/login'}><button type="button">{button_name}</button></a>
         </div>
         <div className="signup__navbar-menu">
             {toggleMenu

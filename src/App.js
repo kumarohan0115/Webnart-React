@@ -18,6 +18,8 @@ import Tnslogin from './Component/Game/Tnslogin';
 import AnimationForm from './Component/Credencials/AnimatedForm';
 import GameHome from './Component/Game/GameHome';
 import TwoDimensionGame from './Component/Game/TwoDimensionGame';
+import ThreeDimensionGame from './Component/Game/ThreeDimensionGame';
+import Gamedetails from './Component/Game/Gamedetails';
 
 function App() {
   return (
@@ -52,6 +54,10 @@ function App() {
           <Route exact path="/animationform" element={<AnimationForm/>}>
           </Route>
           <Route exact path="/2dgame" element={<TwoDimensionGame/>}>
+          </Route>
+          <Route exact path="/3dgame" element={<ThreeDimensionGame/>}>
+          </Route>
+          <Route exact path="/detailed-game" element={<Gamedetails/>}>
           </Route>
         </Routes>
       </BrowserRouter>

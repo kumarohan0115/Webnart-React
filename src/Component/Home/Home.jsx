@@ -200,7 +200,7 @@ const Home = () => {
               {/* <a href="#second" style={{color: "white"}}> */}
               <span className="nxt-btn" style={{ cursor: "pointer" }}>
                 <a href="#second" style={{ color: "white" }}>
-                  Let's Go
+                  <button className="btn btn-lg btn-outline">Let's Go</button>
                 </a>
               </span>
               {/* </a> */}
