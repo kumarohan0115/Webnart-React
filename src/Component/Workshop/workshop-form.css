@@ -38,7 +38,19 @@
     margin-top: 1rem;
     font-weight: 600;
 }
+.yrr-sec .input-field label{
+    margin-top: 1rem;
+    font-weight: 600;
+}
 
+.input-field{
+    width: 49%;
+}
+
+
+.yrr-sec{
+    display: flex;
+}
 
 .workshop_btn{
     margin: auto;
