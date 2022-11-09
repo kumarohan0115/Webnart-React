@@ -14,7 +14,7 @@ Under Development, making this project perfect to be used by user's As soon As P
 
 ![image](https://user-images.githubusercontent.com/82724054/200919488-07137250-9165-46cf-b0db-8598bd8b55bc.png)
 
-![image](https://user-images.githubusercontent.com/82724054/200919714-852e0fd1-cfd2-471b-8c59-a74bcc9622ae.png)
+![image](https://user-images.githubusercontent.com/82724054/200926749-5a5e54cd-c3e3-4070-8e4f-d9146ccee7d5.png)
 Dummy Data used here to show.
 
 ![image](https://user-images.githubusercontent.com/82724054/200920994-1f859a84-d70e-42f9-a96a-7f8aab178704.png)
