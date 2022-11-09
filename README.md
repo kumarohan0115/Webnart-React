@@ -20,7 +20,7 @@ Dummy Data used here to show.
 ![image](https://user-images.githubusercontent.com/82724054/200920994-1f859a84-d70e-42f9-a96a-7f8aab178704.png)
 Developers Page
 
-Image of Game section with Dummy Thubnails
+Image of Game section with Dummy Thumbnails
 ![image](https://user-images.githubusercontent.com/82724054/200921272-150ec151-7665-456f-84f0-c89fb486b308.png)
 
 2D & 3D Game Section Will look likes
