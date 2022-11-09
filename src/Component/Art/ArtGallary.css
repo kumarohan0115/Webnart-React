@@ -1,4 +1,6 @@
-
+.artgallary-home-main_div{
+  background: white;
+}
 
   .left-it {
     position: absolute;
@@ -127,7 +129,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
 }
 
 
@@ -142,6 +143,7 @@
     margin-bottom: 30px;
     font-size: 60px;
     white-space: nowrap;
+    margin-top: 12%;
 }
 
 
