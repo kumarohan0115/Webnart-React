@@ -7,8 +7,7 @@
   }
 
 .developers-main-div{
-    /* background-color: #072c4b; */
-    background-color: rgb(81, 81, 81);
+    background: linear-gradient(60deg,#c9081e, #343cc8)!important;
     width: 100vw;
     min-height: 100vh;
     margin-top: 3%;

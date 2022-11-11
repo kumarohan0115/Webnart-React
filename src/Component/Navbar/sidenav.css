@@ -2,7 +2,7 @@
     width: 200px;
     min-height: 100vh;
     position:fixed;
-    background-color: black;
+    background-color: #080f16;
     z-index: 2;
     top: 3rem;
 }

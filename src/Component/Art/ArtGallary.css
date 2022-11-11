@@ -1,5 +1,7 @@
 .artgallary-home-main_div{
   background: white;
+  overflow: hidden;
+  margin-bottom: -3rem;
 }
 
   .left-it {
@@ -52,7 +54,7 @@
     background-color: #080f16;
     height: 100%;
     position: fixed;
-    top: 8%;
+    top: 48px;
   }
   
   .bar2 {
@@ -101,7 +103,6 @@
   .bor-r {
     border: 2px solid red;
   }
-
 
 
 
@@ -169,7 +170,7 @@
     margin-left: 25%;
   }
   .side-nav2 {
-    width: 150px;
+    width: 120px;
     background-color: #080f16;
     height: 100%;
     position: fixed;
@@ -205,8 +206,7 @@
 }
 
 .area{
-    margin-left: 100px;
-    /* margin-bottom: 15px; */
+    margin-left: 100px;   
 }
 
 
@@ -235,7 +235,8 @@
 
 
 
-/* .footer{
+
+.footer{
     padding-left: 230px;
     background-color: #080f16;
     height: 80px;
@@ -255,6 +256,10 @@
     font-size: 1rem;
 }
 
+.social{
+  display: flex;
+}
+
 .social > a> img{
     display: flex;
     margin-top: 20px;
@@ -268,4 +273,4 @@
     right: 0% ;
     bottom: 0% !important;
     margin-top:15px !important;
-} */
+}

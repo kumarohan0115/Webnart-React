@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import Home from './Component/Home/Home.jsx'
 import Signup from './Component/Credencials/Signup'
 import Login from './Component/Credencials/Login'
@@ -24,7 +24,6 @@ import Gamedetails from './Component/Game/Gamedetails';
 function App() {
   return (
     <div className="App">
-
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home/>}>
