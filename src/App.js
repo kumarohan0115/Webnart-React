@@ -20,6 +20,7 @@ import GameHome from './Component/Game/GameHome';
 import TwoDimensionGame from './Component/Game/TwoDimensionGame';
 import ThreeDimensionGame from './Component/Game/ThreeDimensionGame';
 import Gamedetails from './Component/Game/Gamedetails';
+import DevelopersSignup from './Component/Credencials/DevelopersSignup'
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
           <Route exact path="/Devefolio" element={<Devfolio/>}>
           </Route>
           <Route exact path="/developers" element={<Developers/>}>
+          </Route>
+          <Route exact path="/developerSignupform" element={<DevelopersSignup/>}>
           </Route>
           <Route exact path="/gamehome" element={<GameHome/>}>
           </Route>

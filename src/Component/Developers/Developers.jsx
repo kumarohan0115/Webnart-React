@@ -55,7 +55,7 @@ const Developers = () => {
 
   return (
     <div className="developers-main-div">
-        <Navbar button_name={'Join As Developer'}/>
+        <Navbar button_name={"Developer's Login"}/>
         <div className="side-area1">
             <AlignHorizontalLeftIcon id="menu-icon" onClick={toggleClass}/>
         </div>
@@ -64,7 +64,7 @@ const Developers = () => {
         <SideNav ClassName="{isActive ? 'active': null}, " id="side_nav_developer" name={developersSideNav} logo={'https://t4.ftcdn.net/jpg/04/64/64/09/360_F_464640910_Bid7MoSLjzV6wv6Ukhks0sx9EhDgljIw.jpg'} />
         
         <div className="side-area2">
-            <a href="/"><span className="joinus">Developer's Login</span></a>
+            <a href="/developerSignupform"><span className="joinus">Join as Developer</span></a>
         </div>
 
         <div className="developers-content offset-2 col-9">
