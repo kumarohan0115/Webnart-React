@@ -5,6 +5,7 @@
 #devsignupmain{
     /* background: url(../../Assets/devsignupbg.svg); */
     background: url(../../Assets/formbg.jpg);
+    /* background: linear-gradient( to right, rgb(0 0 0/.6), rgb(0 0 0/0) ),url(../../Assets//formbg.jpg); */
     background-size: cover;
     min-height: 100vh;
 }
@@ -35,14 +36,9 @@
     align-items: center;
 }
 
-.devlopersForm form label span{
+.devlopersForm form label span:first-child{
     color: red;
     font-size: 2rem;
-}
-
-.devlopersForm form input{
-    border: none;
-    border-bottom: 1rem;
 }
 
 .intrestedToGetHired{
@@ -59,6 +55,13 @@
 .intrestedToGetHired input[type=checkbox] {
     accent-color: #019860;
   }
+
+
+  .developers_Input{
+    border-radius: 10px;
+    border: none;
+  }
+
 
 .drop-container {
     position: relative;

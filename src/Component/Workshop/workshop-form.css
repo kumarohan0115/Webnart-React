@@ -30,13 +30,15 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    box-shadow: 0px 0px 7px white;
+    border-radius: 10px;
 }
-
-
 
 .workshop-form label{
     margin-top: 1rem;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 .yrr-sec .input-field label{
     margin-top: 1rem;
@@ -45,6 +47,11 @@
 
 .input-field{
     width: 49%;
+}
+
+.workshop-form label span:first-child{
+    color: red;
+    font-size: 2rem;
 }
 
 
@@ -87,4 +94,27 @@
     display: block;
     background-color: #fff;
     padding: 2rem;
+}
+.attend{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    outline: none;
+    opacity: 0.7;
+    border-radius: 10px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .attend:hover {
+    opacity: 1;
+  }
+
+.attend::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: red;
+    cursor: pointer;
 }
