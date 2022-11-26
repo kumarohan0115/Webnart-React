@@ -22,14 +22,16 @@ const HomeLogin = () => {
     const [validPwd,setValidPwd]= useState(false);
     const [pwdFocus,setPwdFocus]= useState(false);
     
+    // eslint-disable-next-line
     const [matchPwd,setMatchPwd]= useState();
     const [validMatch,setValidMatch]= useState(false);
+    // eslint-disable-next-line
     const [matchFocus,setMatchFocus]= useState(false);
     
     const [errMsg,setErrMsg]= useState(false);
     const [success,setSuccess]= useState(false);
 
-
+    
 
     useEffect(() => {
       userRef.current.focus();
@@ -58,6 +60,7 @@ const HomeLogin = () => {
     
     
 
+    // eslint-disable-next-line
     const submitHandle=async(e)=>{
         e.preventDefault();
         const v1 = USER_REGEX.test(user)
