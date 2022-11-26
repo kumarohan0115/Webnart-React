@@ -14,21 +14,26 @@ const DevelopersSignup = () => {
   const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
   const userRef = useRef();
+  // eslint-disable-next-line
   const errRef = useRef();
-
+  
+  // eslint-disable-next-line
   const [userFocus, setUserFocus] = useState(false);
-
-
-
+  
+  
+  
   const [pass, setPass] = useState();
   const [validPwd, setValidPwd] = useState(false);
   const [pwdFocus, setPwdFocus] = useState(false);
-
+  
   const [matchPwd, setMatchPwd] = useState();
   const [validMatch, setValidMatch] = useState(false);
+  // eslint-disable-next-line
   const [matchFocus, setMatchFocus] = useState(false);
-
+  
+  // eslint-disable-next-line
   const [errMsg, setErrMsg] = useState(false);
+  // eslint-disable-next-line
   const [success, setSuccess] = useState(false);
 
 
@@ -44,6 +49,7 @@ const DevelopersSignup = () => {
     setErrMsg('');
   }, [pass, matchPwd])
 
+  // eslint-disable-next-line
   const submitHandle = async (e) => {
     e.preventDefault();
     const v1 = PWD_REGEX.test(pass)
