@@ -101,27 +101,25 @@ const Home = () => {
 
   useEffect(() => {
     setQuotes(quotes[i].quote)
-    setAuthor("~"+quotes[i].author)
-    setTimeout(function(){
-      if(i===quotes.length-1)
-      {
+    setAuthor("~" + quotes[i].author)
+    setTimeout(function () {
+      if (i === quotes.length - 1) {
         seti(0);
       }
-      else
-      {
-        seti(i+1)
+      else {
+        seti(i + 1)
       }
-    },60000);
+    }, 60000);
     console.log(quotes[i].quote);
   }, [i])
 
 
-  const founderName={
-    name1:"Vishal Pal",
-    name2:"Rohan Kumar",
-    name3:"Shahank Chaurasia"
+  const founderName = {
+    name1: "Vishal Pal",
+    name2: "Rohan Kumar",
+    name3: "Shahank Chaurasia"
   }
-  
+
 
   return (
     <>
@@ -225,13 +223,14 @@ const Home = () => {
         <div className="s-m-div  ">
           <div className="left-content ">
             <div className="q-div">
+
               <p>
+                <FormatQuoteIcon id="quote" style={{ transform: "scaleX(-1)" }} />{quot}<FormatQuoteIcon id='quote' />
+              </p>
+              <p style={{ width: "fit-content", float: "right" }}>
                 {author}
               </p>
-              <p>
-                <FormatQuoteIcon id="quote" />{quot}<FormatQuoteIcon id='quote'/>
-              </p>
-            </div><br/>
+            </div><br />
             <h2>Founders & Developers</h2>
             <div className="tiles-div " id="tiles-div">
               <div className="tiles-l text-center" id="l-t"
@@ -244,9 +243,9 @@ const Home = () => {
                 <p id="founderName">{founderName.name1}</p>
                 <p id="founderDesc">MERN Stack Developer</p>
                 <ul className="founder-profile-card-element">
-                  <li><MailOutlineIcon/>  vishalpal2912@gmail.com</li>
-                 
-                  <li><LocationOnIcon/>  Delhi</li>
+                  <li><MailOutlineIcon />  vishalpal2912@gmail.com</li>
+
+                  <li><LocationOnIcon />  Delhi</li>
                 </ul>
               </div>
               <div className="tiles-c-h text-center" id="c-t">
@@ -259,9 +258,9 @@ const Home = () => {
                   Front End Developer
                 </p>
                 <ul className="founder-profile-card-element">
-                  <li><MailOutlineIcon/>  rohankr350@gmail.com</li>
-                  
-                  <li><LocationOnIcon/>  Delhi</li>
+                  <li><MailOutlineIcon />  rohankr350@gmail.com</li>
+
+                  <li><LocationOnIcon />  Delhi</li>
                 </ul>
               </div>
               <div className="tiles-r text-center" id="r-t"
@@ -277,9 +276,9 @@ const Home = () => {
                   Back End Developer
                 </p>
                 <ul className="founder-profile-card-element">
-                  <li><MailOutlineIcon/>  shashank.chaurasia1606@gmail.com</li>
+                  <li><MailOutlineIcon />  shashank.chaurasia1606@gmail.com</li>
 
-                  <li><LocationOnIcon/>  Delhi</li>
+                  <li><LocationOnIcon />  Delhi</li>
                 </ul>
               </div>
             </div>
@@ -293,10 +292,10 @@ const Home = () => {
               </div>
               <p id="founderName">{founderName.name1}</p>
               <ul className="founder-profile-card-element">
-                  <li><MailOutlineIcon/>  vishalpal2912@gmail.com</li>
-                 
-                  <li><LocationOnIcon/>  Delhi</li>
-                </ul>
+                <li><MailOutlineIcon />  vishalpal2912@gmail.com</li>
+
+                <li><LocationOnIcon />  Delhi</li>
+              </ul>
             </div>
             <div className="tiles-r-h760 text-center" id="c-t">
               <div className="t-udiv">
@@ -305,10 +304,10 @@ const Home = () => {
               </div>
               <p id="founderName">{founderName.name2}</p>
               <ul className="founder-profile-card-element">
-                  <li><MailOutlineIcon/>  rohankr350@gmail.com</li>
-                  
-                  <li><LocationOnIcon/>  Delhi</li>
-                </ul>
+                <li><MailOutlineIcon />  rohankr350@gmail.com</li>
+
+                <li><LocationOnIcon />  Delhi</li>
+              </ul>
             </div>
             <div className="tiles-r-h760 text-center" id="r-t">
               <div className="t-udiv">
@@ -317,16 +316,16 @@ const Home = () => {
               </div>
               <p id="founderName">{founderName.name3}</p>
               <ul className="founder-profile-card-element">
-                  <li><MailOutlineIcon/>  shashank.chaurasia1606@gmail.com</li>
+                <li><MailOutlineIcon />  shashank.chaurasia1606@gmail.com</li>
 
-                  <li><LocationOnIcon/>  Delhi</li>
-                </ul>
+                <li><LocationOnIcon />  Delhi</li>
+              </ul>
             </div>
           </div>
 
           <div className="right-content">
             <div className="tech-div">
-                <h2>we are!</h2>
+              <h2>we are!</h2>
               <ul>
                 <li> We follow our Dream's and will achieve soon</li>
                 <li> We are here to help you find your sparks as developer's and user's</li>
