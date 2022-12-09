@@ -1,0 +1,18 @@
+.upload_dev_content{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.upload_inputField label{
+    font-weight: 600;
+}
+.upload_inputField{
+    border: 2px dashed black;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

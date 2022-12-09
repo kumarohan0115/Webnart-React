@@ -21,6 +21,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
+import WebTempletsupload from './Component/Uploads/WebTempletsupload'
 
 function App() {
   return (
@@ -60,6 +61,8 @@ function App() {
           <Route exact path="/3dgame" element={<ThreeDimensionGame />}>
           </Route>
           <Route exact path="/detailed-game" element={<Gamedetails />}>
+          </Route>
+          <Route exact path="/upload" element={<WebTempletsupload />}>
           </Route>
         </Routes>
       </BrowserRouter>
