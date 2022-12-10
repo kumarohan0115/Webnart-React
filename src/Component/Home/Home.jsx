@@ -124,9 +124,13 @@ const Home = () => {
 
   const showHide=()=>{
     var element = document.getElementById('home-buttons');
-    $('#home-buttons').toggle(element.style.visibility='visible')
+    $('#home-buttons').toggle(element.style.visibility='visible');
     
   }
+
+  window.onscroll = function() {
+    document.getElementById('home-buttons').style.position='absolute';
+  };
 
 
   return (
