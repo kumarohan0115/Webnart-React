@@ -68,9 +68,8 @@ form{
     justify-content: center;
 }
 .signup-btn{
-    margin-top:10px;
     width: 100%;
-    padding:5px 20px;
+    margin: auto;
 }
 
 .signup-btn > button{

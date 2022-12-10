@@ -11,6 +11,7 @@ import { useState, useEffect } from "react";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import avtar from '../../Assets/avtart.png'
+import AppsIcon from '@mui/icons-material/Apps';
 
 const Home = () => {
 
@@ -121,6 +122,13 @@ const Home = () => {
   }
 
 
+  const showHide=()=>{
+    var element = document.getElementById('home-buttons');
+    $('#home-buttons').toggle(element.style.visibility='visible')
+    
+  }
+
+
   return (
     <>
       <section id="first">
@@ -164,8 +172,19 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="right-div ">
-            <div className="buttons">
+              
+              <div className="app-icon">
+                {/* <a href="" > */}
+                  <AppsIcon onClick={showHide}/>
+                {/* </a> */}
+              </div>
+
+          <div className="buttons" id="home-buttons">
+              <div className="signup-btn">
+                <a href="/homeLogin">
+                  Login
+                </a>
+              </div>
               <div className="signup-btn">
                 <a href="/signup">
                   {/* <a href="/tnssignup"> */}
@@ -176,47 +195,53 @@ const Home = () => {
               {/* TNS */}
               <div className="signup-btn">
                 <a href="/workshopregitrstion">
-                  WorkShop Reg
+                  WorkShop Registration
                 </a>
               </div>
             </div>
-            <div className="signup-btn">
-              <a href="/homeLogin">
-                Login
-              </a>
-            </div>
-
-
+          <div className="right-div ">
             {/* Central content of home page---------------------------------------- */}
             <div className="main-con">
               <h1>Welcome to </h1>
-              <div className="w-div">Webnart</div>
+              <div className="w-div">
+                  Webnart
+                <div className="wave">
+                </div>
+              </div>
               <div className="des ">
-                Webnart Collection of Online website to provide free content, to needy!
                 <h4>Come Together, Share and Earn</h4>
               </div>
               {/* <a href="#second" style={{color: "white"}}> */}
-              <span className="nxt-btn" style={{ cursor: "pointer" }}>
-                <a href="#second" style={{ color: "white" }}>
-                  <button className="btn btn-lg btn-outline">Let's Explore</button>
-                </a>
+              <span className="" style={{ cursor: "pointer" }}>
+                {/* <a href="" style={{ color: "white" }}> */}
+                  <button className="btn btn-lg btn-outline" style={{ color: "white", fontSize: "30px" }}>Let's Explore</button>
+                {/* </a> */}
               </span>
               {/* </a> */}
             </div>
-            {/* <hr className="l-div"> */}
-          </div>
+          </div>  
+            
         </div>
-      </section>
+      {/* </section> */}
 
 
       {/* 2ns Page starts from here==============================> */}
-      <section id="second">
+      {/* <section id="second"> */}
         <div className="top-nav" id="top-nav">
-          <div className="top-nav-con" id="top-nav-con">
-            <a href="/Devefolio">Development</a>
-            <a href="/gamehome">Game</a>
-            <a href="/ArtGallary">Arts</a>
-            <a href="/">Future</a>
+
+          <div className="content_cards">
+            <a href="/Devefolio">
+              <div className="c_cards dev_card"></div>
+              <h3>Development</h3>
+            </a>
+            <a href="/gamehome">
+              <div className="c_cards game_card"></div>
+              <h3>Game</h3>
+            </a>
+            <a href="/ArtGallary">
+              <div className="c_cards art_card"></div>
+              <h3>Art</h3>
+            </a>
           </div>
         </div>
 
@@ -340,7 +365,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      {/* </section> */}
 
       <div className="footer ">
         <form className="form-group">
@@ -360,6 +385,7 @@ const Home = () => {
         </form>
         <div id="copyright">Webnart &copy; Copyright2021</div>
       </div>
+      </section>
     </>
   );
 };
