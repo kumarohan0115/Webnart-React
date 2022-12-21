@@ -51,7 +51,7 @@ const NewDev = () => {
                     <div className='item col-lg-4 col-md-4 col-sm-6'>
                         <div className="flip-card">
                             <div id='flip-card-front'>
-                                <a href="">
+                                <a href="/">
                                     <img src="https://media.gettyimages.com/id/482018359/photo/india-gate-new-delhi.jpg?s=612x612&w=gi&k=20&c=e9heXVuTwxzgoqCl2mEQjti5yAVKNZJgg9MtbfPcQlM=" alt="" />
                                 </a>
                             </div>
