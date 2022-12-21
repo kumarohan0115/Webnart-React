@@ -28,7 +28,7 @@ const DevFolio = () => {
             'icon':<EventNoteIcon className='icon'/>,
         },
         {
-            'href':"/",
+            'href':"/newdev",
             'name':"Trending",
             'icon':<BookIcon className='icon'/>,
         },
