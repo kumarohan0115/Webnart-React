@@ -23,6 +23,7 @@ import {
 } from 'react-router-dom';
 import WebTempletsupload from './Component/Uploads/WebTempletsupload'
 import NewDev from './Component/Development/NewDev'
+import UserSideDashboard from './Component/Dashboards/UserSideDashboard'
 
 function App() {
   return (
@@ -66,6 +67,8 @@ function App() {
           <Route exact path="/upload" element={<WebTempletsupload />}>
           </Route>
           <Route exact path="/newdev" element={<NewDev/>}>
+          </Route>
+          <Route exact path="/userdashbaord" element={<UserSideDashboard/>}>
           </Route>
         </Routes>
       </BrowserRouter>

@@ -70,9 +70,12 @@ const Developers = () => {
         <div className="developers-content offset-2 col-9">
             <div className="peoples">
                 <div className="avtar">
-                    <img src={avatar} alt="avtar"/>
-                    <h4>Developer Name</h4>
-                    <h5>Designation</h5>
+                   
+                   <a href="/userdashbaord">
+                        <img src={avatar}  alt="avtar"/>
+                        <h4>Developer Name</h4>
+                        <h5>Designation</h5>
+                    </a> 
                 </div>
                 <div className="avtar">
                     <img src={avatar} alt="avtar"/>

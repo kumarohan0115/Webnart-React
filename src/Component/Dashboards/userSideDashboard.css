@@ -1,0 +1,255 @@
+*{
+    font-family: 'Agency FB', sans-serif;
+}
+.br{
+    border: 2px solid red;
+}
+
+.dashboard .backdrop{
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../../Assets/profile-backdrop.jpg);
+}
+
+
+.dashboard_container .dashBoardSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile_image{
+    margin-left: 5%;
+    margin-top: -4rem;
+}
+
+.dashboard_container .dashBoardSection .profile_image img{
+    border-radius: 50%;
+    border: 0.5rem solid white;
+}
+
+.dashboard_container .dashBoardSection .wrapper_data{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper_data .nameSection_about{
+    background-color: white;
+    box-shadow: 0px 5px 6px rgb(205, 205, 205);
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 1rem 5rem 10px 1rem;
+
+}
+
+.nameSection_about h4{
+    color: black;
+    text-align: left;
+    font-size: 28px;
+}
+
+.wrapper_data .section_button button{
+    margin: 0 1rem;
+    box-shadow: 0px 5px 6px rgb(205, 205, 205);
+    border-radius: 8px;
+    padding: 5px 1.5rem;
+    font-size: larger;
+}
+
+
+/* Experience and Skill set ==============================> */
+
+.dashboard_content_info{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+
+.dashboard_content_info > .exp_abt, .skillset_and_contact_info{
+    height: fit-content;
+    box-shadow: 0px 6px 8px rgb(205, 205, 205);
+    border-radius: 1rem;
+    width: 500px;
+    padding: 10px;
+}
+
+.dashboard_content_info > .exp_abt .Experience{
+    box-shadow: 0px 6px 8px rgb(205, 205, 205);
+    border-radius: 1rem;
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 2rem;
+    font-family: 'Agency FB', sans-serif;
+}
+.dashboard_content_info > .exp_abt .aboutUser{
+    box-shadow: 0px 4px 8px rgb(205, 205, 205);
+    border-radius: 1rem;
+    font-size: 18px;
+    padding: 12px;
+    height: fit-content;
+    margin: 2rem 0;
+    font-family: 'Agency FB', sans-serif;
+}
+.skillset_and_contact_info{
+    font-size: 18px;
+    padding: 2rem;
+}
+
+.skillset_and_contact_info div{
+    list-style: none;
+    display: flex;
+}
+.skillset_and_contact_info div li{
+    margin: 0 1rem;
+}
+
+
+
+
+.skillset_and_contact_info h5{
+    color: black;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.skillset_and_contact_info a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.skillset_and_contact_info a:hover{
+    color: purple;
+}
+
+
+.messageBox{
+    margin-top: 1.5rem;
+    visibility: hidden;
+}
+
+.messageBox button{
+    padding: 0 1rem;
+    margin-left: 1rem;
+}
+
+
+
+.skillset_and_contact_info .skill_set_button{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.skillset_and_contact_info .skill_set_button button{
+    padding: 0 1rem;
+    font-size: larger;
+    box-shadow: 0px 5px 6px rgb(205, 205, 205);
+    border-radius: 8px;
+}
+
+
+/* Project/work of userDashboard==========================> */
+#userDashboard_prohect_heading h1{
+    margin-top: 5%;
+    margin-left: 7%;
+}
+.projects_uploads{
+    height: auto;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 0px 5px 6px rgb(205, 205, 205);
+}
+
+.projects_uploads .templet_area_userDashboard{
+    width: 400px;
+    height: 250px;
+    margin:.5rem 1rem;
+    border-radius: .5rem;
+    border: 0.2px solid black;
+    box-shadow: 0px 5px 6px rgb(205, 205, 205);
+}
+
+
+
+@media screen and (max-width:1050px){
+    .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
+        height: fit-content;
+        box-shadow: 0px 6px 8px rgb(205, 205, 205);
+        border-radius: 1rem;
+        width: 400px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:928px){
+    .projects_uploads .templet_area_userDashboard{
+        width: 500px;
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width:850px){
+    .dashboard_content_info{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
+        width: 500px;
+        margin-top: 2rem;
+    }
+
+    .dashboard_container .dashBoardSection .wrapper_data{
+        flex-direction: column;
+    }
+
+    .section_button{
+        margin-top: 2rem;
+        display: flex;
+    }
+
+    .wrapper_data .nameSection_about{
+        padding: 10px 20px;
+    }
+
+}
+
+@media screen and (max-width:550px){
+    .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
+        width: 400px;
+    }
+    
+    .dashboard_container .dashBoardSection{
+        flex-direction: column;
+    }
+    .profile_image{
+        margin-left: 0;
+        margin-top: -4rem;
+    }
+}
+
+@media screen and (max-width:450px){
+    .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
+        width: 300px;
+    }
+}
+@media screen and (max-width:300px){
+    .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
+        width: 250px;
+    }
+}
