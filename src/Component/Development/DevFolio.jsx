@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar';
-import SideNav from '../Navbar/SideNav';
+// import SideNav from '../Navbar/SideNav';
+import NewSideNav from '../Navbar/NewSideNav';
 import './Devfolio.css'
 
 import HomeIcon from '@mui/icons-material/Home';
@@ -62,9 +63,10 @@ const DevFolio = () => {
     }
 
     return (
-        <div id='developer-div'>
+        <div id='developer-div' style={{display:'flex'}}>
             <Navbar button_name={'join Us'}/>
-            <SideNav name={devSideNavElement} logo={'https://t4.ftcdn.net/jpg/04/64/64/09/360_F_464640910_Bid7MoSLjzV6wv6Ukhks0sx9EhDgljIw.jpg'} />
+            <NewSideNav name={devSideNavElement}/>
+            {/* <SideNav name={devSideNavElement} logo={'https://t4.ftcdn.net/jpg/04/64/64/09/360_F_464640910_Bid7MoSLjzV6wv6Ukhks0sx9EhDgljIw.jpg'} /> */}
             {/* Content---------------------------------------------------------> */}
 
             <div className="devfolio-main-div offset-lg-2 col-lg-10 offset-md-2 col-md-10 col-sm-12">

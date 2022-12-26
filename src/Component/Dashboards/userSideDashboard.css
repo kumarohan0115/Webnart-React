@@ -1,15 +1,35 @@
 *{
     font-family: 'Agency FB', sans-serif;
 }
+
 .br{
     border: 2px solid red;
+    /* color: #F8EDE3
+    #DFD3C3
+    #F5EBE0
+    #EDE4E0
+    #FFF5E4; */
 }
+#userDashboardmain{
+    display: flex;
+    width: fit-content;
+    background-color:  #0a1929;
+}
+
+
+
 
 .dashboard .backdrop{
     height: 250px;
     width: 100%;
+    display: flex;
     background-size: cover;
     background-image: url(../../Assets/profile-backdrop.jpg);
+}
+
+.backdrop span{
+    margin: 2rem;
+    display: none;
 }
 
 
@@ -20,8 +40,10 @@
 }
 
 .profile_image{
-    margin-left: 5%;
+    margin-left: 6%;
     margin-top: -4rem;
+    display: flex;
+    align-items: flex-end;
 }
 
 .dashboard_container .dashBoardSection .profile_image img{
@@ -30,30 +52,30 @@
 }
 
 .dashboard_container .dashBoardSection .wrapper_data{
-    width: 60%;
+    width: 70%;
     display: flex;
+    align-content: flex-end;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.wrapper_data .nameSection_about{
-    background-color: white;
-    box-shadow: 0px 5px 6px rgb(205, 205, 205);
-    border-radius: 10px;
-    font-size: 18px;
-    padding: 1rem 5rem 10px 1rem;
-
+.nameSection_about{
+    /* padding: 10px 20px; */
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
 }
 
 .nameSection_about h4{
-    color: black;
+    /* color: black; */
+    color: white;
     text-align: left;
     font-size: 28px;
 }
 
 .wrapper_data .section_button button{
     margin: 0 1rem;
-    box-shadow: 0px 5px 6px rgb(205, 205, 205);
+    /* box-shadow: 0px 2px 6px rgb(205, 205, 205); */
     border-radius: 8px;
     padding: 5px 1.5rem;
     font-size: larger;
@@ -70,22 +92,26 @@
 
 .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
     height: fit-content;
-    box-shadow: 0px 6px 8px rgb(205, 205, 205);
+    box-shadow: 0px 2px 8px rgb(205, 205, 205);
     border-radius: 1rem;
     width: 500px;
     padding: 10px;
 }
 
 .dashboard_content_info > .exp_abt .Experience{
-    box-shadow: 0px 6px 8px rgb(205, 205, 205);
+    box-shadow: 1px 2px 6px rgb(205, 205, 205);
     border-radius: 1rem;
     padding: 12px;
     font-size: 18px;
     margin-top: 2rem;
+    background-color: #142434;
     font-family: 'Agency FB', sans-serif;
+    color: white;
 }
 .dashboard_content_info > .exp_abt .aboutUser{
-    box-shadow: 0px 4px 8px rgb(205, 205, 205);
+    background-color: #142434;
+    box-shadow: 0px 2px 6px rgb(205, 205, 205);
+    color: white;
     border-radius: 1rem;
     font-size: 18px;
     padding: 12px;
@@ -96,6 +122,7 @@
 .skillset_and_contact_info{
     font-size: 18px;
     padding: 2rem;
+    color: white;
 }
 
 .skillset_and_contact_info div{
@@ -110,16 +137,22 @@
 
 
 .skillset_and_contact_info h5{
-    color: black;
+    /* color: black; */
+    color: white;
     text-align: left;
     margin-top: 16px;
 }
 
 .skillset_and_contact_info a{
-    color: black;
+    /* color: black; */
+    color: white;
     font-size: 18px;
     text-decoration: none;
     font-weight: 600;
+}
+
+.skill_list{
+    color: white;
 }
 
 .skillset_and_contact_info a:hover{
@@ -147,15 +180,16 @@
 .skillset_and_contact_info .skill_set_button button{
     padding: 0 1rem;
     font-size: larger;
-    box-shadow: 0px 5px 6px rgb(205, 205, 205);
+    /* box-shadow: 0px 2px 6px rgb(205, 205, 205); */
     border-radius: 8px;
 }
 
 
 /* Project/work of userDashboard==========================> */
-#userDashboard_prohect_heading h1{
+#userDashboard_project_heading h1{
     margin-top: 5%;
     margin-left: 7%;
+    color: white;
 }
 .projects_uploads{
     height: auto;
@@ -165,7 +199,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    box-shadow: 0px 5px 6px rgb(205, 205, 205);
+    box-shadow: 0px 2px 6px rgb(205, 205, 205);
 }
 
 .projects_uploads .templet_area_userDashboard{
@@ -174,7 +208,7 @@
     margin:.5rem 1rem;
     border-radius: .5rem;
     border: 0.2px solid black;
-    box-shadow: 0px 5px 6px rgb(205, 205, 205);
+    box-shadow: 0px 2px 6px rgb(205, 205, 205);
 }
 
 
@@ -182,7 +216,7 @@
 @media screen and (max-width:1050px){
     .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
         height: fit-content;
-        box-shadow: 0px 6px 8px rgb(205, 205, 205);
+        box-shadow: 0px 2px 8px rgb(205, 205, 205);
         border-radius: 1rem;
         width: 400px;
         padding: 10px;
@@ -217,16 +251,14 @@
         display: flex;
     }
 
-    .wrapper_data .nameSection_about{
-        padding: 10px 20px;
+    
+    .profile_image{
+        flex-direction: column;
+        margin-left: 13%;
     }
-
 }
 
 @media screen and (max-width:550px){
-    .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
-        width: 400px;
-    }
     
     .dashboard_container .dashBoardSection{
         flex-direction: column;
@@ -234,10 +266,22 @@
     .profile_image{
         margin-left: 0;
         margin-top: -4rem;
+        align-items: center;
+    }
+
+    .backdrop span{
+        color: white;
+        margin: 2rem;
+        display: block;
+    }
+
+    #togglebtn{
+        font-size: 48px;
+        margin-left: 100px;
     }
 }
 
-@media screen and (max-width:450px){
+/* @media screen and (max-width:450px){
     .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
         width: 350px;
     }
@@ -252,4 +296,4 @@
     .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
         width: 250px;
     }
-}
+} */

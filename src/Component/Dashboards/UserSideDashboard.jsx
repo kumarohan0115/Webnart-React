@@ -1,34 +1,91 @@
-import React from 'react'
+import {useState} from 'react'
 import './userSideDashboard.css'
+import $ from 'jquery'
+import NewSideNav from '../Navbar/NewSideNav';
 import avtar from '../../Assets/avtart.png'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import ManageHistoryIcon from '@mui/icons-material/ManageHistory';
+import MenuIcon from '@mui/icons-material/Menu';
 
-const usersSideDashboard = () => {
+const UserSideDashboard = (name) => {
 
+    const dashboard=[
+        {
+            'href':"/",
+            'name':"Dashboard",
+            'icon':<DashboardIcon className='icon'/>,
+        },
+        {
+            'href':"/",
+            'name':"Projects",
+            'icon':<AccountTreeIcon className='icon'/>,
+        },
+        {
+            'href':"/",
+            'name':"Hiring",
+            'icon':<NotificationsNoneIcon className='icon'/>,
+        },
+        {
+            'href':"/developers",
+            'name':"Developer",
+            'icon':<ManageHistoryIcon className='icon'/>,
+        },            
+    ]
 
+    const [follow, setFollow] = useState('follow')
+    
     const messagebox=()=>{
         document.getElementById('msgbox').style.visibility='visible';
     }
 
+    const Follow=()=>{
+        
+        ( follow==='Follow') ? setFollow('Following') : setFollow("Follow");
+    }
+
+    const[hidden, setShow] = useState("Hidden")
+
+    const togglebtn=()=>{
+        if(hidden){
+            $("#dashboardSidenav").toggle('slow');
+            setShow("show")
+        }
+    }
+
+    
+    
+        
+
   return (
-    <div>
+    <div id='userDashboardmain'>
+
+        <NewSideNav name={dashboard}/>
+                        
         <div className="dashboard">
-            <div className="backdrop"></div>
+
+            <div className="backdrop">
+                <span><MenuIcon id='togglebtn' onClick={togglebtn}/></span>
+            </div>
             <div className="dashboard_container">
                 <section className='dashBoardSection'>
                     <div className="profile_image">
                         <img src={avtar} alt="Avatar" />
+                        <div className="nameSection_about">
+                            <h4 id='nameId'>Naina</h4>
+                            <p>I am Java Developer in Bengaluru, India</p>
+                        </div>
                     </div>
                     <div className="wrapper_data">
-                        <div className="nameSection_about">
-                            <h4 id='nameId'>Name of user</h4>
-                            <p>I am Java Developer in Bengaluru</p>
-                        </div>
                         <div className="section_button">
                             <button className='btn btn-light btn-sm'>HireMe</button>
-                            <button className='btn btn-primary btn-sm'>Follow</button>
+                            <button className='btn btn-primary btn-sm' id='follow' onClick={Follow}> 
+                                { (follow==='Following') ? 'Following' : 'Follow' }
+                            </button>
                         </div>
                     </div>
                 </section>
@@ -74,7 +131,7 @@ const usersSideDashboard = () => {
                     </div>
 
                 </div>
-                <span id='userDashboard_prohect_heading'>
+                <span id='userDashboard_project_heading'>
                     <h1>Project/Work</h1>
                 </span>
                 <div className="projects_uploads">
@@ -91,4 +148,4 @@ const usersSideDashboard = () => {
   )
 }
 
-export default usersSideDashboard
+export default UserSideDashboard

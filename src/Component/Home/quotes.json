@@ -1,5 +1,13 @@
 [
     {
+      "quote": "Clean Code Always look like it was written by someone who cares.",
+      "author": "Robert C. Martin"
+    },
+    {
+      "quote": "Testing Leads to faliure, and faliure leads to understanding",
+      "author": "unknown"
+    },
+    {
       "quote": "You can avoid reality, but you cannot avoid the consequences of avoiding reality.",
       "author": "Ayn Rand"
     },
