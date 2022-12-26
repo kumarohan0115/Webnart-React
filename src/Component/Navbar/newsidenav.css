@@ -1,5 +1,5 @@
 .dashboardsidenav{
-    min-width: 248px;
+    min-width: 200px;
     min-height: 100vh;
     position: sticky;
     top: 0%;
@@ -20,17 +20,18 @@
     color: white;
 }
 .dashboardsidenav a li{
-    background-color:  rgb(19, 47, 76);
     margin: 1rem 0;
+    /* font-size: 36px; */
     list-style: none;
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 0.2rem 1rem;
     transition: transform;
-    box-shadow: 0px 2px 6px rgb(205, 205, 205);    
+    /* box-shadow: 0px 2px 6px rgb(205, 205, 205);     */
 }
 
 .dashboardsidenav a li:hover{
-    box-shadow: 0px 2px 7px rgb(205, 205, 205);   
+    box-shadow: 0px 0px 3px rgb(205, 205, 205);   
+    background-color:  rgb(19, 47, 76);
     transform: scale(1.1);
 }
 
