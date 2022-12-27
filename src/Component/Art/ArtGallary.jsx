@@ -79,7 +79,7 @@ const ArtGallary = () => {
                     </div>
                 </div>
             </div>
-            <div className="foot">
+            {/* <div className="foot">
                 <div className="row footer">
                     <div className="col-3">
                         <h5>Feedback</h5>
@@ -95,7 +95,7 @@ const ArtGallary = () => {
                         <a href="/"><img alt='' src="https://img.icons8.com/color/48/000000/twitter.png" /></a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
