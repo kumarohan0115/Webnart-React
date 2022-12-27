@@ -82,6 +82,8 @@ window.addEventListener('resize', function (event) {
       document.getElementById('dark-theme').style.display = "none";
 
     }
+    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
