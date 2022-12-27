@@ -13,7 +13,7 @@
 #userDashboardmain{
     display: flex;
     width: fit-content;
-    background-color:  #0a1929;
+    background-color:  var(--dashboard-bg-color);
 }
 
 
@@ -21,10 +21,13 @@
 
 .dashboard .backdrop{
     height: 250px;
-    width: 100%;
+    width: calc(100% - 20px);
+    border-radius: 1rem;
+    margin: 12px 12px 0 12px;
     display: flex;
     background-size: cover;
-    background-image: url(../../Assets/profile-backdrop.jpg);
+    /* background-image: url(../../Assets/backdrop.jpg); */
+    background-image: url(../../Assets/wallhaven-wyomo6.jpg);
 }
 
 .backdrop span{
@@ -62,20 +65,20 @@
 .nameSection_about{
     /* padding: 10px 20px; */
     margin-left: 20px;
-    color: white;
+    color: var(--text-color);
     font-size: 20px;
 }
 
 .nameSection_about h4{
     /* color: black; */
-    color: white;
+    color: var(--h3-h4-colors);
     text-align: left;
     font-size: 28px;
 }
 
 .wrapper_data .section_button button{
     margin: 0 1rem;
-    /* box-shadow: 0px 2px 6px rgb(205, 205, 205); */
+    /* box-shadow: var(--dashboard-box-shadow); */
     border-radius: 8px;
     padding: 5px 1.5rem;
     font-size: larger;
@@ -92,26 +95,28 @@
 
 .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
     height: fit-content;
-    box-shadow: 0px 2px 8px rgb(205, 205, 205);
+    box-shadow: var(--dashboard-box-shadow);
     border-radius: 1rem;
     width: 500px;
     padding: 10px;
 }
 
 .dashboard_content_info > .exp_abt .Experience{
-    box-shadow: 1px 2px 6px rgb(205, 205, 205);
+    box-shadow: var(--dashboard-box-shadow);
     border-radius: 1rem;
     padding: 12px;
     font-size: 18px;
     margin-top: 2rem;
-    background-color: #142434;
+    /* background-color: #142434; */
+    color: var(--text-color);
+    background-color: var(--dashboard-bg-color);
     font-family: 'Agency FB', sans-serif;
-    color: white;
+    
 }
 .dashboard_content_info > .exp_abt .aboutUser{
-    background-color: #142434;
-    box-shadow: 0px 2px 6px rgb(205, 205, 205);
-    color: white;
+    background-color: var(--dashboard-bg-color);
+    box-shadow: var(--dashboard-box-shadow);
+    color: var(--text-color);
     border-radius: 1rem;
     font-size: 18px;
     padding: 12px;
@@ -122,7 +127,7 @@
 .skillset_and_contact_info{
     font-size: 18px;
     padding: 2rem;
-    color: white;
+    color: var(--text-color);
 }
 
 .skillset_and_contact_info div{
@@ -137,22 +142,20 @@
 
 
 .skillset_and_contact_info h5{
-    /* color: black; */
-    color: white;
+    color: var(--text-color);
     text-align: left;
     margin-top: 16px;
 }
 
 .skillset_and_contact_info a{
-    /* color: black; */
-    color: white;
+    color: var(--text-color);
     font-size: 18px;
     text-decoration: none;
     font-weight: 600;
 }
 
 .skill_list{
-    color: white;
+    color: var(--text-color);
 }
 
 .skillset_and_contact_info a:hover{
@@ -180,7 +183,7 @@
 .skillset_and_contact_info .skill_set_button button{
     padding: 0 1rem;
     font-size: larger;
-    /* box-shadow: 0px 2px 6px rgb(205, 205, 205); */
+    /* box-shadow: var(--dashboard-box-shadow); */
     border-radius: 8px;
 }
 
@@ -199,7 +202,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    box-shadow: 0px 2px 6px rgb(205, 205, 205);
+    box-shadow: var(--dashboard-box-shadow);
 }
 
 .projects_uploads .templet_area_userDashboard{
@@ -208,7 +211,7 @@
     margin:.5rem 1rem;
     border-radius: .5rem;
     border: 0.2px solid black;
-    box-shadow: 0px 2px 6px rgb(205, 205, 205);
+    box-shadow: var(--dashboard-box-shadow);
 }
 
 
@@ -216,7 +219,7 @@
 @media screen and (max-width:1050px){
     .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
         height: fit-content;
-        box-shadow: 0px 2px 8px rgb(205, 205, 205);
+        box-shadow: var(--dashboard-box-shadow);
         border-radius: 1rem;
         width: 400px;
         padding: 10px;

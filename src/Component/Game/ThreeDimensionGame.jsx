@@ -1,7 +1,7 @@
 import React from 'react'
 import './TwoD.css'
-import Navbar from '../Navbar/Navbar'
-import SideNav from '../Navbar/SideNav'
+// import Navbar from '../Navbar/Navbar'
+import NewSideNav from '../Navbar/NewSideNav'
 
 import HomeIcon from '@mui/icons-material/Home';
 import EventNoteIcon from '@mui/icons-material/EventNote';
@@ -17,6 +17,11 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 const ThreeDimensionGame = () => {
 
   const twoDgameSideNav=[
+    {
+      'href':"/gamehome",
+      'name':"Game Home",
+      'icon':<HomeIcon className='icon'/>,
+    },
     {
         'href':"/",
         'name':"3D Game Home",
@@ -54,11 +59,12 @@ function truncateString(str, num) {
   }
 }
   return (
-    <>
+    <div id='threedgamesection'>
         {/* <GameSideNav/> */}
-        <Navbar/> 
-        <SideNav name={twoDgameSideNav} logo={game3Dlogo}/>
+        {/* <Navbar/>  */}
+        <NewSideNav name={twoDgameSideNav} logo={game3Dlogo}/>
         <div className="twoDgameSection container-fluid">
+          <h1 style={{textAlign:"center"}}>3D Games</h1>
           <div className="gamerow">
             <div className="game_preview_thumbnail col-lg-6 col-md-12 col-sm-12"></div>
             <div className="game_details col-lg-6 col-md-12 col-sm-12">
@@ -192,7 +198,7 @@ function truncateString(str, num) {
             </div>
           </div>
         </div>
-    </>
+    </div>
   )
 }
 

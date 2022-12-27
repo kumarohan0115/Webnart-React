@@ -5,7 +5,8 @@
   }
 
   #developer-div{
-    background: white
+    background: var(--dashboard-bg-color);
+    display: flex;
   }
 
   .dev-templet-row{

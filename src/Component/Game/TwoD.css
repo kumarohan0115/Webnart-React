@@ -1,14 +1,17 @@
+#twodgamesection,#threedgamesection{
+    display: flex;
+    background-color: var(--dashboard-bg-color);
+}
+
 .twoDgameSection{
-    padding-left: 250px;
-    margin-top: 5%;
+    color: var(--text-color);
 }
 
 .gamerow{
-    background-color: white;
+    border:2px solid white;
     width: 100%;
     height: fit-content;
     margin-bottom: 2rem;
-    padding: 0.2rem;
     display: flex;
     flex-wrap: wrap;
     border-radius: 1rem;

@@ -32,3 +32,62 @@ code {
   --color-subtext: #FF8A71;
   --founder-tile-bgColor: #fff;
 }
+
+
+.dark-theme{
+  --content_heading_font-size: 30px;
+  --content_heading_font-weight: 500;
+  --content_sub-heading-font-size: 28px;
+  --content_sub-heading_sub-topics_font-size: 24px;
+  --content-font-size: 15px;
+  --content-font-weight: 500;
+  
+  --h3-h4-colors:white;
+  --anchor-colors:white;
+  --theme-btn-color: white;
+  --side-nav-bg-color: #0a1929;
+  --side-nav-tile-hover-color:rgb(19, 47, 76);
+  --dashboard-bg-color:#0a1929;
+
+  --text-color:white;
+
+
+  --dashboard-box-shadow: 0px 0px 4px rgb(205,205,205);
+  
+  
+  
+  --tile-hover-background-color:rgba(62, 142, 255, 0.5);
+  --tile-hover-text-color:rgb(24, 4, 59);
+  --tile-hover-box-shadow-color:rgb(24, 4, 59);
+  
+}
+
+.light-theme{
+  color:white;
+  --content_heading_font-size: 30px;
+  --content_heading_font-weight: 500;
+  --content_sub-heading-font-size: 28px;
+  --content_sub-heading_sub-topics_font-size: 24px;
+  --content-font-size: 15px;
+  --content-font-weight: 500;
+    
+  --h3-h4-colors:black;
+  --anchor-colors:rgb(24, 4, 59);
+  --theme-btn-color: black;
+  --side-nav-bg-color: white;
+  --side-nav-tile-hover-color:whitesmoke;
+  --dashboard-bg-color:white;
+  
+  
+  --text-color:black;
+  
+  
+  --dashboard-box-shadow: 0px 0px 6px rgb(188, 188, 188);
+
+
+
+  --tile-hover-background-color:rgba(62, 142, 255, 0.5);
+  --tile-hover-text-color:rgb(255, 255, 255);
+  --tile-hover-box-shadow-color:rgb(9, 133, 255);
+
+}

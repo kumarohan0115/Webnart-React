@@ -9,7 +9,7 @@ body::-webkit-scrollbar{
 }
 
 #gamehomepage{
-
+    display: flex;
     background: #0f0f0f;
 }
 
@@ -20,7 +20,7 @@ body::-webkit-scrollbar{
 .mainGame{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 250px;
+    /* padding-left: 250px; */
 }
 
 .latestcontent{

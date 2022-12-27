@@ -10,7 +10,8 @@
     background: linear-gradient(60deg,#c9081e, #343cc8)!important;
     width: 100vw;
     min-height: 100vh;
-    margin-top: 3%;
+    display: flex;
+    /* margin-top: 3%; */
 }
 
 
@@ -40,8 +41,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 0px 5px white;
-    background-color: rgba(0, 0, 0, 0.1);
+    /* box-shadow: 1px 0px 5px white;
+    background-color: rgba(0, 0, 0, 0.1); */
 }
 
 
@@ -60,10 +61,10 @@
 
 }
 
-
+/* 
 .developers-content{
     margin-top: 3rem;
-}
+} */
 
 .avtar{
     margin-top: 3rem;
@@ -86,9 +87,9 @@
 
 @media screen and (max-width:1660px){
 
-    .developers-main-div{
+    /* .developers-main-div{
         margin-top: 46px;
-    }
+    } */
 }
 
 

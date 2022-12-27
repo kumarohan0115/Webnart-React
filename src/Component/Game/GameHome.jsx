@@ -1,7 +1,7 @@
 import React from 'react'
 import './gamehome.css'
-import Navbar from '../Navbar/Navbar'
-import SideNav from '../Navbar/SideNav'
+// import Navbar from '../Navbar/Navbar'
+import NewSideNav from '../Navbar/NewSideNav'
 import ImageSlider from '../ExtraComp/ImageSlider'
 
 import HomeIcon from '@mui/icons-material/Home';
@@ -51,8 +51,8 @@ const GameHome = () => {
 
   return (
     <div id="gamehomepage">
-        <Navbar button_name={'Game Login'}/>
-        <SideNav id='gameSidenav' name={gamesidenav} logo={gamelogo}/>
+        {/* <Navbar button_name={'Game Login'}/> */}
+        <NewSideNav id='gameSidenav' name={gamesidenav} logo={gamelogo}/>
         <div className="mainGame container-fluid">
             <div className="latestcontent col-lg-12 col-md-12 col-sm-12">
                 <div className="slideContainer">

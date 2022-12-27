@@ -97,6 +97,7 @@ const UserSideDashboard = (name) => {
                             <p>I am a java Developer with experince of 2yrs in Respected company.</p>
                         </div>
                         <div className="aboutUser">
+                            <h2>About</h2>
                             <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia velit porro, provident fugiat quibusdam ducimus natus inventore ex tenetur tempore soluta distinctio consectetur, nesciunt nobis. Quae doloremque incidunt nam.</li>
                             <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia velit porro, provident fugiat quibusdam ducimus natus inventore ex tenetur tempore soluta distinctio consectetur, nesciunt nobis. Quae doloremque incidunt nam.</li>
                             <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia velit porro, provident fugiat quibusdam ducimus natus inventore ex tenetur tempore soluta distinctio consectetur, nesciunt nobis. Quae doloremque incidunt nam.</li>
