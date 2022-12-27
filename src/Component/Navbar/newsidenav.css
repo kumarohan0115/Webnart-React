@@ -78,5 +78,5 @@
     bottom: 2%;
     left: 3%;
     cursor: pointer;
-    z-index: 3;
+    z-index: 999;
 }
