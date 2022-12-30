@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { useCookies } from 'react-cookie';
 import './newsidenav.css'
 import $ from 'jquery';
@@ -6,16 +6,16 @@ import $ from 'jquery';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
-const NewSideNav = ({name}) => {
+const NewSideNav = ({ name }) => {
 
-const [width, setWidth] = useState(window.innerWidth);
-window.addEventListener('resize', function (event) {
-  if (width < 550) {
-    document.getElementById('dashboardSidenav').style.display='none';
-  }
-  setWidth(window.innerWidth);
-});
-    
+  const [width, setWidth] = useState(window.innerWidth);
+  window.addEventListener('resize', function (event) {
+    if (width < 550) {
+      document.getElementById('dashboardSidenav').style.display = 'none';
+    }
+    setWidth(window.innerWidth);
+  });
+
   const [cookies, setCookie] = useCookies('theme');
 
   const [theme, setTheme] = useState("light-theme");
@@ -82,26 +82,26 @@ window.addEventListener('resize', function (event) {
       document.getElementById('dark-theme').style.display = "none";
 
     }
-    
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
     <div>
-        <div className="dashboardsidenav" id='dashboardSidenav'>
-            <a href="/"><h2 style={{textAlign:'center'}}>Webnart</h2></a>
-            <h4 style={{textAlign:'left', paddingLeft: '5%'}}>Profile</h4>
-            {name.map((list, i) => (
+      <div className="dashboardsidenav" id='dashboardSidenav'>
+        <a href="/"><h2 style={{ textAlign: 'center' }}>Webnart</h2></a>
+        <h4 style={{ textAlign: 'left', paddingLeft: '5%' }}>Profile</h4>
+        {name.map((list, i) => (
 
-                <a href={list.href}> <li>{list.icon}{list.name}</li></a>
+          <a href={list.href} key={i}> <li>{list.icon}{list.name}</li></a>
 
-                ))}
-        </div>
+        ))}
+      </div>
 
-        <div className="theme1">
-          <DarkModeIcon className='theme_button1' id="dark-theme"   onClick={toggleTheme}/>
-          <LightModeIcon className='theme_button1' id="light-theme" onClick={toggleTheme}/>
-        </div>
+      <div className="theme1">
+        <DarkModeIcon className='theme_button1' id="dark-theme" onClick={toggleTheme} />
+        <LightModeIcon className='theme_button1' id="light-theme" onClick={toggleTheme} />
+      </div>
     </div>
   )
 }
