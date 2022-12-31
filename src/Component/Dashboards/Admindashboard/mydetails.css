@@ -1,0 +1,39 @@
+#admin_mydetails{
+    padding: 2rem;
+}
+
+hr{
+ border-top: 0.5px solid var(--hr-color);  
+}
+.admin_mydetails_div{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 1rem 0; */
+    /* box-shadow: var(--dashboard-box-shadow); */
+    border-radius: 6px;
+    padding: 1rem;
+}
+.your_bio{
+    display: flex;
+    align-items: center;
+}
+
+.your_bio input{
+    height: 100px;
+}
+
+.admin_mydetails_div label{
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.admin_mydetails_div input{
+    /* padding-left: 0.5rem; */
+    width: 50%;
+    outline: none;
+}
+
+#admin_mydetails p{
+    float: left;
+    color: black;
+}

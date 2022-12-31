@@ -41,7 +41,10 @@ code {
   --content_sub-heading_sub-topics_font-size: 24px;
   --content-font-size: 15px;
   --content-font-weight: 500;
+
+  --hr-color:rgb(255 255 255 / 10%);
   
+  --h1-colors:white;
   --h3-h4-colors:white;
   --anchor-colors:white;
   --theme-btn-color: white;
@@ -50,7 +53,7 @@ code {
   --dashboard-bg-color:#0a1929;
 
   --text-color:white;
-
+  
 
   --dashboard-box-shadow: 0px 0px 4px rgb(205,205,205);
   
@@ -63,14 +66,17 @@ code {
 }
 
 .light-theme{
-  color:white;
+  
   --content_heading_font-size: 30px;
   --content_heading_font-weight: 500;
   --content_sub-heading-font-size: 28px;
   --content_sub-heading_sub-topics_font-size: 24px;
   --content-font-size: 15px;
   --content-font-weight: 500;
-    
+  
+  --hr-color:rgba(0, 0, 0, 0.3);
+  
+  --h1-colors:black;
   --h3-h4-colors:black;
   --anchor-colors:rgb(24, 4, 59);
   --theme-btn-color: black;

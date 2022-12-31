@@ -51,7 +51,6 @@ const Developers = () => {
 
     ]
 
-
     // const [isActive, setActive] = useState(false);
     // const toggleClass = () => {
     //     console.log("clicked")
@@ -70,13 +69,8 @@ const Developers = () => {
     // }
     return (
         <div className="developers-main-div">
-            {/* <Navbar button_name={"Developer's Login"}/> */}
-            {/* <div className="side-area1">
-            <AlignHorizontalLeftIcon id="menu-icon" onClick={toggleClass}/>
-        </div> */}
-            {/* <div className="progress-bar" id="topbar"></div> */}
-
-            <NewSideNav ClassName="{isActive ? 'active': null}, " id="side_nav_developer" name={developersSideNav} logo={'https://t4.ftcdn.net/jpg/04/64/64/09/360_F_464640910_Bid7MoSLjzV6wv6Ukhks0sx9EhDgljIw.jpg'} />
+            
+            <NewSideNav ClassName="{isActive ? 'active': null}, " id="side_nav_developer" name={developersSideNav}/>
 
             <div className="side-area2">
                 <a href="/developerSignupform"><span className="joinus">Join as Developer</span></a>
@@ -88,8 +82,6 @@ const Developers = () => {
 
                         {
                             Profiledata?.map(profiledata => {
-
-
                                 var base64String = btoa(
                                     new Uint8Array(profiledata.Profile_Pic?.data.data).reduce((data, byte) => data + String.fromCharCode(byte), '')
                                     // String.fromCharCode(...new Uint8Array(profiledata.Profile_Pic?.data.data))
@@ -97,8 +89,7 @@ const Developers = () => {
                                 // vishal changed your code because that's not working. only work on youtube
 
                                 return (
-
-                                    <a href="/userdashbaord" key={profiledata.First_Name}>
+                                    <a href={`/userdashbaord/${profiledata.Username}`} key={profiledata.First_Name}>
                                         <img src={`data:image/png;base64,${base64String}`} alt="pp" />
                                         <h4>{profiledata.First_Name}</h4>
                                         <h5>{profiledata.Profile}</h5>
@@ -106,7 +97,6 @@ const Developers = () => {
                                 )
                             })
                         }
-
                     </div>
                 </div>
             </div>

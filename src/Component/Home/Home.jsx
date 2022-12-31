@@ -16,7 +16,7 @@ import AppsIcon from '@mui/icons-material/Apps';
 const Home = () => {
 
   const [width, setWidth] = useState(window.innerWidth);
-  window.addEventListener('resize', function (event) {
+  window.addEventListener('resize', function () {
     if (width < 760) {
       document.getElementById('l-t').className = 'tiles-l-h text-center';
       document.getElementById('r-t').className = 'tiles-r-h text-center';

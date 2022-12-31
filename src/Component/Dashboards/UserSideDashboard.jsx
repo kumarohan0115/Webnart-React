@@ -1,8 +1,8 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import './userSideDashboard.css'
 import $ from 'jquery'
 import NewSideNav from '../Navbar/NewSideNav';
-import avtar from '../../Assets/avtart.png'
+// import avtar from '../../Assets/avtart.png'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -11,8 +11,21 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ManageHistoryIcon from '@mui/icons-material/ManageHistory';
 import MenuIcon from '@mui/icons-material/Menu';
+import axios from '../../axios'
 
 const UserSideDashboard = (name) => {
+
+
+    const [Profiledetails, setProfiledetails] = useState([]);
+
+    useEffect(() => {
+        axios.get("v2/DisplayData/arminislove").then((response) => {
+            setProfiledetails(response.data)
+            console.log(response.data)
+        }).catch(err => console.log("err here", err));
+    }, []);
+
+
 
     const dashboard=[
         {
@@ -57,7 +70,10 @@ const UserSideDashboard = (name) => {
         }
     }
 
-    
+    var base64String = btoa(
+        new Uint8Array(Profiledetails.profile_pic?.data.data).reduce((data, byte) => data + String.fromCharCode(byte), '')
+        // String.fromCharCode(...new Uint8Array(profiledata.Profile_Pic?.data.data))
+    );
     
         
 
@@ -74,10 +90,11 @@ const UserSideDashboard = (name) => {
             <div className="dashboard_container">
                 <section className='dashBoardSection'>
                     <div className="profile_image">
-                        <img src={avtar} alt="Avatar" />
+                        <img src={`data:image/png;base64,${base64String}`} alt="Avatar" />
+                        {/* <img src={avtar} alt="Avatar" /> */}
                         <div className="nameSection_about">
-                            <h4 id='nameId'>Naina</h4>
-                            <p>I am Java Developer in Bengaluru, India</p>
+                            <h4 id='nameId'>{Profiledetails.Name}</h4>
+                            <p>I am {Profiledetails.Brief} in {Profiledetails.Location}</p>
                         </div>
                     </div>
                     <div className="wrapper_data">
@@ -93,31 +110,27 @@ const UserSideDashboard = (name) => {
                 <div className="container_fluid dashboard_content_info">
                     <div className="  exp_abt">
                         <div className="Experience">
-                            <h2>Experiance</h2>
-                            <p>I am a java Developer with experince of 2yrs in Respected company.</p>
+                            <h2>Experience</h2>
+                            <p>I am a java Developer with experience of {Profiledetails.exp} in Respected company.</p>
                         </div>
                         <div className="aboutUser">
                             <h2>About</h2>
-                            <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia velit porro, provident fugiat quibusdam ducimus natus inventore ex tenetur tempore soluta distinctio consectetur, nesciunt nobis. Quae doloremque incidunt nam.</li>
-                            <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia velit porro, provident fugiat quibusdam ducimus natus inventore ex tenetur tempore soluta distinctio consectetur, nesciunt nobis. Quae doloremque incidunt nam.</li>
-                            <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia velit porro, provident fugiat quibusdam ducimus natus inventore ex tenetur tempore soluta distinctio consectetur, nesciunt nobis. Quae doloremque incidunt nam.</li>
+                            <li>{Profiledetails.discription}</li>
                         </div>
                     </div>
                     <div className="  skillset_and_contact_info">
                         <h5>Skills</h5>
                         <div className="skill_list">
-                            <li>Java</li>
-                            <li>Java Spring</li>
-                            <li>Java </li>
+                            <li>{Profiledetails.Skill}</li>
                         </div>
                         <h5>Location</h5>
-                        <span><LocationOnIcon/></span> Bangaluru, India
+                        <span><LocationOnIcon/></span> {Profiledetails.Location}
 
                         <h5>Email</h5>
-                        <span><EmailIcon/></span>  naina.dev@webnart.com 
+                        <span><EmailIcon/></span>  {Profiledetails.email}
 
                         <h5>Website</h5> 
-                        <span><OpenInNewIcon/></span> <a href="https://webnart.netlify.app/"> www.webnart.netlify.com </a>
+                        <span><OpenInNewIcon/></span> <a href={Profiledetails.website}> {Profiledetails.website} </a>
 
                         <div className="skill_set_button">
                             <button className='btn btn-primary btn-md'>Add to List</button>

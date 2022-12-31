@@ -21,9 +21,9 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import WebTempletsupload from './Component/Uploads/WebTempletsupload'
 import NewDev from './Component/Development/NewDev'
 import UserSideDashboard from './Component/Dashboards/UserSideDashboard'
+import AdminDashboard from './Component/Dashboards/Admindashboard/AdminDashboard.jsx'
 
 function App() {
   return (
@@ -64,11 +64,11 @@ function App() {
           </Route>
           <Route exact path="/detailed-game" element={<Gamedetails />}>
           </Route>
-          <Route exact path="/upload" element={<WebTempletsupload />}>
-          </Route>
           <Route exact path="/newdev" element={<NewDev/>}>
           </Route>
           <Route exact path="/userdashbaord" element={<UserSideDashboard/>}>
+          </Route>
+          <Route exact path="/admindashbaord" element={<AdminDashboard/>}>
           </Route>
         </Routes>
       </BrowserRouter>

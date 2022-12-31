@@ -1,15 +1,30 @@
-.dashboardsidenav{
-    min-width: 200px;
+
+#sidenavMain{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px rgb(205, 205, 205);    
+    background-color: var(--side-nav-bg-color);
+    position: relative;
+    
+}
+.dashboardsidenav{
+    /* min-height: 100vh; */
+    justify-content: space-evenly;
     position: sticky;
+    min-width: 200px;
+    height: fit-content;
     top: 0%;
     left: 0%;
     bottom: 0%;
     padding: 10px;
     border-radius: 0 .6rem 0.6rem 0;
     background-color: var(--side-nav-bg-color);
-    box-shadow: 0px 0px 6px rgb(205, 205, 205);    
     z-index: 999;
+}
+
+.secondSection{
+    margin-top: 2rem;
 }
 
 .dashboardsidenav h3,.dashboardsidenav h4{
@@ -37,6 +52,35 @@
 }
 
 
+
+.theme_button1{
+    color: var(--theme-btn-color);
+    /* position: fixed; */
+    /* bottom: 2%; */
+    /* left: 3%; */
+    cursor: pointer;
+    z-index: 999;
+}
+
+.profile_id{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_id img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.profile_id p{
+    cursor: pointer;
+    color: var(--text-color);
+    margin: 0;
+}
+
+
 @media screen and (max-width:1300px) {
     .dashboardsidenav{
         max-width: 248px;
@@ -52,6 +96,13 @@
     .dashboardsidenav{
         min-width: 100px;
         max-width: 100px;
+    }
+    .profile_id{
+        flex-direction: column !important;
+    }
+    
+    .theme1{
+        flex-direction: column;
     }
 }
 @media screen and (max-width:700px) {
@@ -69,14 +120,5 @@
     .dashboardsidenav a li{
         padding:1rem;
     }
-}
 
-
-.theme_button1{
-    color: var(--theme-btn-color);
-    position: fixed;
-    bottom: 2%;
-    left: 3%;
-    cursor: pointer;
-    z-index: 999;
 }

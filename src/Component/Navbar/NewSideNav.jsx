@@ -2,19 +2,27 @@ import React, { useState, useEffect } from 'react'
 import { useCookies } from 'react-cookie';
 import './newsidenav.css'
 import $ from 'jquery';
+import avtar from '../../Assets/avtart.png'
 
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import LightModeIcon from '@mui/icons-material/LightMode';
+import ToggleOffIcon from '@mui/icons-material/ToggleOff';
+import ToggleOnIcon from '@mui/icons-material/ToggleOn';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+const NewSideNav = ({ name, secondSection }) => {
 
-const NewSideNav = ({ name }) => {
+  const [widthside, setWidthside] = useState(window.innerWidth);
 
-  const [width, setWidth] = useState(window.innerWidth);
-  window.addEventListener('resize', function (event) {
-    if (width < 550) {
+  window.addEventListener('resize', function () {
+    setWidthside(window.innerWidth);
+  });
+
+  useEffect(() => {
+
+    if (widthside < 600) {
+      console.log("HIi")
       document.getElementById('dashboardSidenav').style.display = 'none';
     }
-    setWidth(window.innerWidth);
-  });
+
+  }, [widthside])
 
   const [cookies, setCookie] = useCookies('theme');
 
@@ -87,20 +95,34 @@ const NewSideNav = ({ name }) => {
   }, [])
 
   return (
-    <div>
+    <div id='sidenavMain'>
       <div className="dashboardsidenav" id='dashboardSidenav'>
-        <a href="/"><h2 style={{ textAlign: 'center' }}>Webnart</h2></a>
-        <h4 style={{ textAlign: 'left', paddingLeft: '5%' }}>Profile</h4>
-        {name.map((list, i) => (
+        <div className="theme1" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <a href="/"><h2 style={{ textAlign: 'center' }}>Webnart</h2></a>
+          <ToggleOnIcon className='theme_button1' id="dark-theme" onClick={toggleTheme} />
+          <ToggleOffIcon className='theme_button1' id="light-theme" onClick={toggleTheme} />
+        </div>
 
-          <a href={list.href} key={i}> <li>{list.icon}{list.name}</li></a>
+        <div className=''>
+          {/* <h4 style={{ textAlign: 'left', paddingLeft: '5%' }}>Profile</h4> */}
+          {name.map((list, i) => (
 
-        ))}
-      </div>
+            <a href={list.href} key={i}> <li>{list.icon}{list.name}</li></a>
 
-      <div className="theme1">
-        <DarkModeIcon className='theme_button1' id="dark-theme" onClick={toggleTheme} />
-        <LightModeIcon className='theme_button1' id="light-theme" onClick={toggleTheme} />
+          ))}
+        </div>
+        <hr />
+        <div className='secondSection'>
+          {secondSection?.map((list, i) => (
+            <a href={list.href} key={i}> <li>{list.icon}{list.name}</li></a>
+          ))}
+        </div>
+        
+        <div className="profile_id">
+          <img src={avtar} alt="" />
+          <p>username <span><KeyboardArrowUpIcon /></span></p>
+        </div>
+
       </div>
     </div>
   )

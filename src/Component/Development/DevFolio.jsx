@@ -47,8 +47,12 @@ const DevFolio = () => {
             'href':"/upload",
             'name':"Upload",
             'icon':<FileUploadIcon className='icon'/>,
+        },
+        {
+            'href':"/admindashbaord",
+            'name':"Admin Dashbaord",
         }
-            
+        
     ]
     
 

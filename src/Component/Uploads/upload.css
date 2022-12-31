@@ -1,0 +1,33 @@
+.upload_dev_content{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:2rem;
+    color: var(--text-color);
+}
+.upload_inputField label{
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 20px;
+}
+.upload_inputField{
+    padding: 100px;
+    border: 2px dashed var(--text-color);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: center;
+}
+
+.upload_detail_fields label{
+    font-size:20px;
+}
+
+.upload_detail_fields button{
+    margin: 0 1rem;
+    float:right;
+    padding: 0.3rem 1rem
+}

@@ -28,7 +28,8 @@
     flex-direction: row-reverse;
     background-size: cover;
     /* background-image: url(../../Assets/backdrop.jpg); */
-    background-image: url(../../Assets/wallhaven-wyomo6.jpg);
+    /* background-image: url(../../Assets/wallhaven-wyomo6.jpg); */
+    background-image: url(../../Assets/cardbg.png);
 }
 
 /* .backdrop span{
@@ -55,9 +56,9 @@
     justify-content: space-around;
 }
 
-.profile_image{
+.dashboard_container .dashBoardSection .profile_image{
     margin-left: 6%;
-    margin-top: -4rem;
+    margin-top: -2rem;
     display: flex;
     align-items: flex-end;
 }
@@ -65,6 +66,8 @@
 .dashboard_container .dashBoardSection .profile_image img{
     border-radius: 50%;
     border: 0.5rem solid white;
+    height: 150px;
+    width: 150px;
 }
 
 .dashboard_container .dashBoardSection .wrapper_data{
@@ -205,7 +208,7 @@
 #userDashboard_project_heading h1{
     margin-top: 5%;
     margin-left: 7%;
-    color: white;
+    color: var(--h3-h4-colors);
 }
 .projects_uploads{
     height: auto;
@@ -241,7 +244,7 @@
 
 @media screen and (max-width:928px){
     .projects_uploads .templet_area_userDashboard{
-        width: 500px;
+        /* width: 500px; */
         height: 250px;
     }
 }
@@ -251,6 +254,7 @@
     .dashboard_content_info{
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
     
     .dashboard_content_info > .exp_abt, .skillset_and_contact_info{
